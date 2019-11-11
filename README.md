@@ -1,10 +1,10 @@
 ## About this assignment
 
-**You are asked to complete as many tasks as you can within *70 minutes*.**
-Tasks are marked with a **TODO** comment in the code.
+**You are asked to complete as many tasks as you can within *70 minutes*.**<br/>
+Tasks are marked with a **TODO** comment in the code.<br/>
 A short description of the required task is provided.
 
-**To begin...**
+**To begin...**<br/>
 Fork this project to your github repository.
 
 **When you're done...**
