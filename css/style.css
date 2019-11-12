@@ -17,17 +17,19 @@ Visit https://fonts.google.com/ select your font, customise youe selection, and 
 
 body {
 	background-color: #f7f7f7;
-	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
+	/* font-family: 'Roboto', sans-serif;
+	font-size: 14px; */
+	font: 14px 'Roboto', sans-serif;
 }
 
 /* Typography */
 body h1, body h2, body h3, body h4, body h5, body h6 {
 	color: #333333;
-	font-family: 'Oswald', sans-serif;
+	/* font-family: 'Oswald', sans-serif;
 	font-style: normal;
 	font-weight: normal;
-	line-height: 1.5;
+	line-height: 1.5; */
+	font: normal normal 1.5 'Oswald', sans-serif;
 }
 
 h1 {font-size: 28px;}
@@ -52,14 +54,14 @@ a:hover, a:focus, a:active {
 
 blockquote {
 	padding: 0px 0px 0px 30px;
-	margin: 0px 0px 25px 0px;
+	margin: 0px 0px 30px 0px;
 	border: none;
 	font-size: 20px;
 	font-weight: 300;
 	position: relative;
 	border-left: 4px double #ddd;
 	border-right: 4px double #ddd;
-	margin-bottom: 30px;
+	/* margin-bottom: 30px; */
 }
 blockquote:before {
 	content: "\f10d";
@@ -98,8 +100,9 @@ select {
 	color: #666666;
 	cursor: pointer;
 	display: inline-block;
-	font-size: 14px;
-	font-weight: 300;
+	/* font-size: 14px;
+	font-weight: 300; */
+	font: 14px 300;
 	height: 40px;
 	padding: 8px 12px;
 	width: 100%;
@@ -256,8 +259,8 @@ form p {
 	padding: 32px 38px;
 	width: 354px;
 	z-index: 50;
-	margin-top: 8px;
-	margin: 40px 0px 0px 0px;
+	/* margin-top: 8px; */
+	margin: 8px 0px 0px 0px;
 	display: none;
 }
 
@@ -331,7 +334,7 @@ form p {
 .ec-blog-grid figure {
 	margin: 0px;
 }
-.ec-blog-grid > ul > li {
+.card {
 	float: none;
 	display: inline-block;
 	vertical-align: top;
