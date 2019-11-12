@@ -29,7 +29,7 @@
                                 <li><i class="fa fa-phone"></i> +00 123 456 789</li>
                                 <li><i class="fa fa-envelope-o"></i>
                                     <!-- TODO Create a hyperlink to the following email address -->
-                                    info@example.com
+                                    <a href="mailto:info@example.com">info@example.com</a>
                                 </li>
                             </ul>
                             <div class="ec-watch-section">
@@ -295,15 +295,16 @@
                                 <!-- TODO Prevent form submission when the value of the email address field is empty. -->
                                 <!-- TODO Choose an appropriate HTML5 element to replace the element that submits the form. -->
                                 <form>
-                                    <ul class="list-unstyled">
+                                    <div class="list-unstyled">
+                                        <label for="exampleInputName2">Name</label>
+                                            <input type="text" placeholder="Your Name">
                                         <li>
-                                            <input type="text" value="Your Name" onblur="if(this.value == '') { this.value ='Your Name'; }" onfocus="if(this.value =='Your Name') { this.value = ''; }"> </li>
-                                        <li>
-                                            <input type="text" value="Enter email address" onblur="if(this.value == '') { this.value ='Enter email address'; }" onfocus="if(this.value =='Enter email address') { this.value = ''; }">
+                                            <input type="email" placeholder="Enter email address">
                                         </li>
                                         <li>
-                                            <input type="submit" value="Sign up" class="ec-bgcolor"> </li>
-                                    </ul>
+                                          <!--  <input  type="submit" value="Sign up" class="ec-bgcolor"> </li> -->
+                                            <button type="submit" class="ec-bgcolor">Sign up</button>
+                                    </div>
                                 </form>
                             </div>
                         </aside>
