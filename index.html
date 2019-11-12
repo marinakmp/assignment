@@ -11,6 +11,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/color.css" rel="stylesheet">
     <link href="css/responsive.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -29,7 +30,7 @@
                                 <li><i class="fa fa-phone"></i> +00 123 456 789</li>
                                 <li><i class="fa fa-envelope-o"></i>
                                     <!-- TODO Create a hyperlink to the following email address -->
-                                    info@example.com
+                                    <a href="mailto: info@example.com"></a> info@example.com
                                 </li>
                             </ul>
                             <div class="ec-watch-section">
@@ -43,7 +44,7 @@
             <!-- Main Header -->
             <div class="ec-main-navsection">
                 <div class="container">
-                    <a href="#" class="ec-logo"><img src="img/logo.jpg" alt=""></a>
+                    <a href="#" class="ec-logo"><img class="img-responsive" src="img/logo.jpg" alt=""></a>
                     <div class="ec-right-section">
                         <div class="ec-navigation">
                             <ul>
@@ -54,10 +55,10 @@
                                 <li><a href="#">Shop</a></li>
                                 <li><a href="#">Contact</a></li>
                             </ul>
-                        </nav>
+                            </nav>
+                        </div>
                     </div>
                 </div>
-            </div>
         </header>
 
         <!-- Page main content -->
@@ -66,80 +67,82 @@
                 <!-- NOTE: Let's use our UI framework wisely. Is the use of a grid nessesary in the following code block? -->
                 <!-- TODO Remove what needs to be removed.
                      TIP: Is this pattern used in other sections of this document? -->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="jumbotron">
-                            <!-- TODO Replace the following span with a heading element and style it "fancy" (styles are provided).
+                <!-- <div class="row"> -->
+                <!-- <div class="col-md-12"> -->
+                <div class="jumbotron">
+                    <!-- TODO Replace the following span with a heading element and style it "fancy" (styles are provided).
                             Further changes in markup might also apply.
                             Find the rule-set in your css file, and proceed accoardingly to the required modifications. -->
-                            <span>Sports Daily your sports blog</span>
-                            <h2>Boss 'understands if striker wanted move</h2>
-                            <p>Vardy has been one of the stars of the season so far and is currently the top scorer. in the Premier League with 10 goals to his name.</p>
-                            <a href="#" class="btn btn-lg btn-primary">FREE ENTER</a>
-                        </div>
-                    </div>
+                    <h1 class="ec-fancy-title">Sports Daily your sports blog</h1>
+                    <h2>Boss 'understands if striker wanted move</h2>
+                    <p>Vardy has been one of the stars of the season so far and is currently the top scorer. in the Premier League with 10 goals to his name.</p>
+                    <a href="#" class="btn btn-lg btn-primary">FREE ENTER</a>
                 </div>
+                <!-- </div> -->
+                <!-- </div> -->
             </div>
 
             <!-- TODO Too many 'ec-main-section', and containers in this document. Not good...
                 Can you fix it? -->
-            <div class="ec-main-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="ec-simple-title">
-                                <h2>Latest news</h2>
-                                <p>Bafe Gomis’ header sealed the comeback for Garry Monk’s side, who went on to complete the double over Arsenal later</p>
-                            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="ec-simple-title">
+                            <h2>Latest news</h2>
+                            <p>Bafe Gomis’ header sealed the comeback for Garry Monk’s side, who went on to complete the double over Arsenal later</p>
                         </div>
-                        <div class="col-md-12">
-                            <div class="ec-blog ec-blog-grid">
-                                <ul class="row">
-                                    <li class="col-md-4">
-                                        <!-- TODO Using CSS position the star icon at the top left of the news car -->
-                                        <div class="ec-blog-wrap">
-                                            <figure>
-                                                <a href="#"><img src="img/blog-grid-1.jpg" alt=""></a> <span class="ec-featured-star ec-bgcolor"><i class="fa fa-star"></i></span>
-                                            </figure>
-                                            <div class="ec-blog-text">
-                                                <h2><a href="#">United, Palace Aim To Rebound From Setbacks</a></h2>
-                                                <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                                            </div>
-                                            <!-- TODO The UI 'breaks' in this point. Add the missing css class (provided by the UI framework). -->
-                                            <div class="ec-grid-time">
-                                                <span><i class="fa fa-clock-o"></i> 3 hours ago</span>
-                                            </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="ec-blog ec-blog-grid">
+                            <ul class="row">
+                                <li class="col-md-4">
+                                    <!-- TODO Using CSS position the star icon at the top left of the news car -->
+                                    <div class="ec-blog-wrap">
+                                        <figure>
+                                            <a href="#"><img class="img-responsive" src="img/blog-grid-1.jpg" alt=""></a> <span class="ec-featured-star ec-bgcolor"><i
+                                                        class="fa fa-star"></i></span>
+                                        </figure>
+                                        <div class="ec-blog-text">
+                                            <h2><a href="#">United, Palace Aim To Rebound From Setbacks</a></h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur.</p>
                                         </div>
-                                    </li>
-                                    <li class="col-md-4">
-                                        <div class="ec-blog-wrap">
-                                            <figure>
-                                                <a href="#"><img src="img/blog-grid-1.jpg" alt=""></a>
-                                            </figure>
-                                            <div class="ec-blog-text">
-                                                <h2><a href="#">The summer of 2014 was understandably all about the</a></h2>
-                                                <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                                            </div>
-                                            <div class="ec-grid-time">
-                                                <span><i class="fa fa-clock-o"></i> 1 hours ago</span>
-                                            </div>
+                                        <!-- TODO The UI 'breaks' in this point. Add the missing css class (provided by the UI framework). -->
+                                        <div class="ec-grid-time">
+                                            <span><i class="fa fa-clock-o"></i> 3 hours ago</span>
                                         </div>
-                                    </li>
-                                    <li class="col-md-4">
-                                        <div class="ec-blog-wrap">
-                                            <figure>
-                                                <a href="#"><img src="img/blog-grid-1.jpg" alt=""></a> <span class="ec-featured-star ec-bgcolor"><i class="fa fa-star"></i></span></figure>
-                                            <div class="ec-blog-text">
-                                                <h2><a href="#">Sevilla finished fifth and just out of the Champions League spots</a></h2>
-                                                <p>Lorem ipsum dolor sit amet, consectetur.</p>
-                                            </div>
-                                            <div class="ec-grid-time">
-                                                <span><i class="fa fa-clock-o"></i> 1 day ago</span>
-                                            </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4">
+                                    <div class="ec-blog-wrap">
+                                        <figure>
+                                            <a href="#"><img class="img-responsive" src="img/blog-grid-1.jpg" alt=""></a>
+                                        </figure>
+                                        <div class="ec-blog-text">
+                                            <h2><a href="#">The summer of 2014 was understandably all about
+                                                        the</a></h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur.</p>
                                         </div>
-                                    </li>
-                                </ul>
-                            </div>
+                                        <div class="ec-grid-time">
+                                            <span><i class="fa fa-clock-o"></i> 1 hours ago</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="col-md-4">
+                                    <div class="ec-blog-wrap">
+                                        <figure>
+                                            <a href="#"><img class="img-responsive" src="img/blog-grid-1.jpg" alt=""></a> <span class="ec-featured-star ec-bgcolor"><i
+                                                        class="fa fa-star"></i></span></figure>
+                                        <div class="ec-blog-text">
+                                            <h2><a href="#">Sevilla finished fifth and just out of the Champions
+                                                        League spots</a></h2>
+                                            <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                                        </div>
+                                        <div class="ec-grid-time">
+                                            <span><i class="fa fa-clock-o"></i> 1 day ago</span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -164,7 +167,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="ec-section-heading"><h2>Our Favourite Shop</h2></div>
+                            <div class="ec-section-heading">
+                                <h2>Our Favourite Shop</h2>
+                            </div>
                         </div>
                         <div class="col-md-12">
                             <div class="ec-shop ec-shop-list">
@@ -172,9 +177,9 @@
                                     <!-- TODO Use the correct Bootstrap css classes to make the following list item eleemnt span in..
                                      a) 2 columns in view port width 768 and up
                                      b) 4 columns in view port width 992 and up -->
-                                    <li class="...">
+                                    <li class="col-lg-3 col-md-6">
                                         <figure>
-                                            <a href="#" class="ec-shop-thumb"><img src="img/shop-list-1.jpg" alt=""></a>
+                                            <a href="#" class="ec-shop-thumb"><img class="img-responsive" src="img/shop-list-1.jpg" alt=""></a>
                                         </figure>
                                         <div class="ec-shopinfo">
                                             <h2><a href="#">Sports cap</a></h2>
@@ -183,9 +188,9 @@
                                             </span>
                                         </div>
                                     </li>
-                                    <li class="...">
+                                    <li class="col-lg-3 col-md-6">
                                         <figure>
-                                            <a href="#" class="ec-shop-thumb"><img src="img/shop-list-1.jpg" alt=""></a>
+                                            <a href="#" class="ec-shop-thumb"><img class="img-responsive" src="img/shop-list-1.jpg" alt=""></a>
                                         </figure>
                                         <div class="ec-shopinfo">
                                             <h2><a href="#">Sports cap</a></h2>
@@ -194,9 +199,9 @@
                                             </span>
                                         </div>
                                     </li>
-                                    <li class="...">
+                                    <li class="col-lg-3 col-md-6">
                                         <figure>
-                                            <a href="#" class="ec-shop-thumb"><img src="img/shop-list-1.jpg" alt=""></a>
+                                            <a href="#" class="ec-shop-thumb"><img class="img-responsive" src="img/shop-list-1.jpg" alt=""></a>
                                         </figure>
                                         <div class="ec-shopinfo">
                                             <h2><a href="#">Sports cap</a></h2>
@@ -205,9 +210,9 @@
                                             </span>
                                         </div>
                                     </li>
-                                    <li class="...">
+                                    <li class="col-lg-3 col-md-6">
                                         <figure>
-                                            <a href="#" class="ec-shop-thumb"><img src="img/shop-list-1.jpg" alt=""></a>
+                                            <a href="#" class="ec-shop-thumb"><img class="img-responsive" src="img/shop-list-1.jpg" alt=""></a>
                                         </figure>
                                         <div class="ec-shopinfo">
                                             <h2><a href="#">Sports cap</a></h2>
@@ -230,11 +235,13 @@
                 <div class="container">
                     <div class="row">
                         <aside class="widget col-md-4 ec-recentnews_widget">
-                            <div class="ec-section-heading"><h2>Recently News</h2></div>
+                            <div class="ec-section-heading">
+                                <h2>Recently News</h2>
+                            </div>
                             <ul>
                                 <li>
                                     <figure>
-                                        <a href="#"><img src="img/recent-widget-1.jpg" alt=""></a>
+                                        <a href="#"><img class="img-responsive" src="img/recent-widget-1.jpg" alt=""></a>
                                     </figure>
                                     <section>
                                         <h6><a href="#">United, Palace Aim To Rebound From Setbacks</a></h6>
@@ -243,7 +250,7 @@
                                 </li>
                                 <li>
                                     <figure>
-                                        <a href="#"><img src="img/recent-widget-1.jpg" alt=""></a>
+                                        <a href="#"><img class="img-responsive" src="img/recent-widget-1.jpg" alt=""></a>
                                     </figure>
                                     <section>
                                         <h6><a href="#">The summer of 2014 all about.</a></h6>
@@ -252,7 +259,7 @@
                                 </li>
                                 <li>
                                     <figure>
-                                        <a href="#"><img src="img/recent-widget-1.jpg" alt=""></a>
+                                        <a href="#"><img class="img-responsive" src="img/recent-widget-1.jpg" alt=""></a>
                                     </figure>
                                     <section>
                                         <h6><a href="#">Sevilla finished fifth and just out of the.</a></h6>
@@ -262,7 +269,9 @@
                             </ul>
                         </aside>
                         <aside class="widget col-md-4 widget_categories">
-                            <div class="ec-section-heading"><h2>CATEGORY</h2></div>
+                            <div class="ec-section-heading">
+                                <h2>CATEGORY</h2>
+                            </div>
                             <!-- TODO use your UI framework nav component -->
                             <ul>
                                 <li><a href="#">Boxing</a> 03</li>
@@ -275,11 +284,13 @@
                             </ul>
                         </aside>
                         <aside class="widget col-md-4 widget_text_info">
-                            <div class="ec-section-heading"><h2>Contact</h2></div>
+                            <div class="ec-section-heading">
+                                <h2>Contact</h2>
+                            </div>
                             <ul class="list-unstyled">
                                 <li>
                                     <i class="fa fa-map-marker"></i>
-                                    <span>AT&T Center<br/>San Antonio, Texas</span>
+                                    <span>AT&T Center<br />San Antonio, Texas</span>
                                 </li>
                                 <li>
                                     <i class="fa fa-phone"></i>
@@ -297,12 +308,13 @@
                                 <form>
                                     <ul class="list-unstyled">
                                         <li>
-                                            <input type="text" value="Your Name" onblur="if(this.value == '') { this.value ='Your Name'; }" onfocus="if(this.value =='Your Name') { this.value = ''; }"> </li>
+                                            <input type="text" placeholder="Your Name"> </li>
                                         <li>
-                                            <input type="text" value="Enter email address" onblur="if(this.value == '') { this.value ='Enter email address'; }" onfocus="if(this.value =='Enter email address') { this.value = ''; }">
+                                            <input type="email" placeholder="Enter email address">
                                         </li>
                                         <li>
-                                            <input type="submit" value="Sign up" class="ec-bgcolor"> </li>
+                                            <button class="ec-bgcolor">Sign up</button>
+                                        </li>
                                     </ul>
                                 </form>
                             </div>
@@ -317,18 +329,22 @@
             <div class="text-muted ec-bottom-section">
                 <div class="container">
                     <div class="clearfix">
-                        <img src="img/logo.jpg" alt="" width="100"> © copyright 2019 all rights reserved
-                        <a href="index.html" class="pull-right backtop-btn">Back to top <i class="fa fa-caret-up"></i></a>
+                        <img class="img-responsive" src="img/logo.jpg" alt="" width="100"> © copyright 2019 all rights reserved
+                        <a href="index.html" class="pull-right backtop-btn">Back to top <i
+                                    class="fa fa-caret-up"></i></a>
                     </div>
                 </div>
             </div>
         </footer>
-    </div>
+        </div>
 
-    <!-- TODO Load framework scripts from a CDN provider. Think about performance. -->
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
+        <!-- TODO Load framework scripts from a CDN provider. Think about performance. -->
 
-    <script src="scripts/app.js"></script>
+        <!-- <script src="scripts/jquery.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <!-- <script src="scripts/bootstrap.min.js"></script> -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="scripts/app.js"></script>
 </body>
+
 </html>

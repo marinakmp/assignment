@@ -2,211 +2,296 @@
 
 /* TODO load fonts in your markup.
 Visit https://fonts.google.com/ select your font, customise youe selection, and embed the required fonts */
+
 @import url(https://fonts.googleapis.com/css?family=Oswald:400&subset=latin);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,greek);
 
 /* NOTE: The following 2 tasks refer to the whole css document. */
+
+
 /* TODO Group common properties. */
+
+
 /* TODO Make this css file more performant: use Bootstrap's css classes, where appropriate, to replace css rules or rule sets. */
+
+
 /* TODO Last thing to do: Remove reduntadant rule sets, or properties */
 
 * {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-	background-color: #f7f7f7;
-	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
+    background-color: #f7f7f7;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
 }
+
 
 /* Typography */
-body h1, body h2, body h3, body h4, body h5, body h6 {
-	color: #333333;
-	font-family: 'Oswald', sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	line-height: 1.5;
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+    color: #333333;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1.5;
 }
 
-h1 {font-size: 28px;}
-h2 {font-size: 22px;}
-h3 {font-size: 20px;}
-h4 {font-size: 18px;}
-h5 {font-size: 16px;}
+h1 {
+    font-size: 28px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
 
 p {
-	line-height: 24px;
- }
+    line-height: 24px;
+}
 
 a {
-	color: #000000;
-	text-decoration: none;
- }
+    color: #000000;
+    text-decoration: none;
+}
 
-a:hover, a:focus, a:active {
-	outline: none;
-	text-decoration: none;
- }
+a:hover,
+a:focus,
+a:active {
+    outline: none;
+    text-decoration: none;
+}
 
 blockquote {
-	padding: 0px 0px 0px 30px;
-	margin: 0px 0px 25px 0px;
-	border: none;
-	font-size: 20px;
-	font-weight: 300;
-	position: relative;
-	border-left: 4px double #ddd;
-	border-right: 4px double #ddd;
-	margin-bottom: 30px;
+    padding: 0px 0px 0px 30px;
+    margin: 0px 0px 25px 0px;
+    border: none;
+    font-size: 20px;
+    font-weight: 300;
+    position: relative;
+    border-left: 4px double #ddd;
+    border-right: 4px double #ddd;
+    margin-bottom: 30px;
 }
+
 blockquote:before {
-	content: "\f10d";
-	font-family: FontAwesome;
-	position: absolute;
-	left: -15px;
-	top: -15px;
-	font-size: 30px;
-	background-color: #fff;
-	transform: scaleY(-1);
+    content: "\f10d";
+    font-family: FontAwesome;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    font-size: 30px;
+    background-color: #fff;
+    transform: scaleY(-1);
 }
+
 blockquote:after {
-	content: "\f10e";
-	font-family: FontAwesome;
-	position: absolute;
-	right: -15px;
-	bottom: -15px;
-	font-size: 30px;
-	background-color: #fff;
+    content: "\f10e";
+    font-family: FontAwesome;
+    position: absolute;
+    right: -15px;
+    bottom: -15px;
+    font-size: 30px;
+    background-color: #fff;
 }
 
 figure {
-	margin-bottom: 6px;
-	position: relative;
- }
+    margin-bottom: 6px;
+    position: relative;
+}
+
 
 /* TODO Add Bootstrap css class to image elements to make the responsive. Not all images need to be responsive by default. */
+
 img {
-	height: auto;
-	max-width: 100%;
- }
+    height: auto;
+    max-width: 100%;
+}
+
 
 /* Forms */
+
 select {
-	border: 1px solid #dfdfdf;
-	color: #666666;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 14px;
-	font-weight: 300;
-	height: 40px;
-	padding: 8px 12px;
-	width: 100%;
-	background-color: #f0eef0;
- }
+    border: 1px solid #dfdfdf;
+    color: #666666;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 300;
+    height: 40px;
+    padding: 8px 12px;
+    width: 100%;
+    background-color: #f0eef0;
+}
+
 
 /* TODO Bonus: Explain in one sentence why the following rules set is not recommended. */
-textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	border: 1px solid #dddddd;
-	box-sizing: border-box;
-	color: #3d3d3d;
-	display: inline-block;
-	font-size: 12px;
-	font-weight: 400;
-	height: 35px;
-	line-height: 20px;
-	outline: none;
-	padding: 4px 6px;
-	vertical-align: middle;
- }
+
+
+/* It has static size rules, which can break responsiveness */
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    color: #3d3d3d;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    height: 35px;
+    line-height: 20px;
+    outline: none;
+    padding: 4px 6px;
+    vertical-align: middle;
+}
 
 form p {
-	float: left;
-	position: relative;
-	width: 100%;
- }
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.ec-featured-star {
+    position: absolute;
+    left: 0%;
+}
 
 .ec-main-section {
-	position: relative;
-}
-.ec-main-content {
-	padding: 50px 0 0 0;
-}
-.ec-right-section {
-	float: right;
-}
-.ec-left-section {
-	float: left;
-}
-.ec-bottom-section, .ec-main-navsection {
-	background-color: #fff;
-}
-.ec-sticky .ec-main-navsection {
-	box-shadow: 0 0 10px #eee;
-	left: 0;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 9999;
+    position: relative;
 }
 
-.ec-main-wrapper { position: relative; }
+.ec-main-content {
+    padding: 50px 0 0 0;
+}
+
+.ec-right-section {
+    float: right;
+}
+
+.ec-left-section {
+    float: left;
+}
+
+.ec-bottom-section,
+.ec-main-navsection {
+    background-color: #fff;
+}
+
+.ec-sticky .ec-main-navsection {
+    box-shadow: 0 0 10px #eee;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+.ec-main-wrapper {
+    position: relative;
+}
+
 
 /* TopStrip */
+
 .ec-top-strip,
-.ec-footer-widget {background-color: #1a1a1a;}
+.ec-footer-widget {
+    background-color: #1a1a1a;
+}
 
 .ec-strip-info {
-	float: left;
-	padding-top: 5px;
-	margin-bottom: 0;
+    float: left;
+    padding-top: 5px;
+    margin-bottom: 0;
 }
+
 .ec-strip-info li {
-	float: left;
-	list-style: none;
-	color: #fff;
-	font-size: 13px;
-	font-weight: bold;
-	margin: 0px 40px 0px 0px;
-	padding: 7px 0px 6px 0px;
+    float: left;
+    list-style: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 0px 40px 0px 0px;
+    padding: 7px 0px 6px 0px;
 }
+
 .ec-strip-info li i {
-	float: left;
-	font-size: 16px;
-	margin-right: 8px;
+    float: left;
+    font-size: 16px;
+    margin-right: 8px;
 }
-.ec-strip-info li a { color: #fff; }
+
+.ec-strip-info li a {
+    color: #fff;
+}
 
 .ec-watch-section {
-	float: right;
+    float: right;
 }
+
 .ec-watch-section-btn {
-	float: left;
-	font-size: 13px;
-	font-weight: bold;
-	color: #fff;
-	padding: 11px 20px;
-	position: relative;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    padding: 11px 20px;
+    position: relative;
 }
+
 
 /* Header main section */
+
 .ec-logo {
-	float: left;
-	margin: 18px 0;
+    float: left;
+    margin: 18px 0;
 }
+
 
 /* MainNavigation */
+
 .ec-mainheader {
-	float: left;
-	width: 100%;
-	background-color: #1e1e1e;
-	border-top: 1px solid #262626;
+    float: left;
+    width: 100%;
+    background-color: #1e1e1e;
+    border-top: 1px solid #262626;
 }
 
+
 /* Navigation */
+
 .ec-navigation {
     background: none;
     border: none;
@@ -214,436 +299,590 @@ form p {
     margin-bottom: 0px;
     text-align: left;
 }
-.ec-navigation > ul > li {
-	float: left;
-	list-style: none;
-	padding: 0px 19px 0px 19px;
-	position: relative;
+
+.ec-navigation>ul>li {
+    float: left;
+    list-style: none;
+    padding: 0px 19px 0px 19px;
+    position: relative;
 }
+
+
 /* TODO minimize selector's depth. Add a css class in your markup to target the anchor element. */
-.ec-navigation > ul > li > a {
+
+.ec-navigation>ul>li>a {
     font-size: 14px;
     color: #343434;
     padding: 35px 0px 37px 0px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     float: left;
     position: relative;
 }
-.ec-navigation > ul > li > a:before {
-	content: '';
-	position: absolute;
-	left: 0px;
-	bottom: 45%;
-	margin-bottom: -10px;
-	width: 100%;
-	height: 2px;
-	opacity: 0;
+
+.ec-navigation>ul>li>a:before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: 45%;
+    margin-bottom: -10px;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
 }
-.ec-navigation > ul > li:hover > a:before,.ec-navigation ul > li.active > a:before {
-	opacity: 1;
-	bottom: 50%;
+
+.ec-navigation>ul>li:hover>a:before,
+.ec-navigation ul>li.active>a:before {
+    opacity: 1;
+    bottom: 50%;
 }
-.ec-navigation > ul > li:first-child > a { padding-left: 0px; }
-.ec-navigation > ul > li:last-child > a { padding-right: 0px; }
+
+.ec-navigation>ul>li:first-child>a {
+    padding-left: 0px;
+}
+
+.ec-navigation>ul>li:last-child>a {
+    padding-right: 0px;
+}
+
 
 /* CartBox */
+
 .ec-cart-box {
-	position: absolute;
-	right: 0px;
-	top: 100%;
-	background-color: #ffffff;
-	padding: 32px 38px;
-	width: 354px;
-	z-index: 50;
-	margin-top: 8px;
-	margin: 40px 0px 0px 0px;
-	display: none;
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    background-color: #ffffff;
+    padding: 32px 38px;
+    width: 354px;
+    z-index: 50;
+    margin-top: 8px;
+    margin: 40px 0px 0px 0px;
+    display: none;
 }
+
 
 /* MainBanner */
+
 .ec-mainbanner {
-	float: left;
-	width: 100%;
+    float: left;
+    width: 100%;
 }
 
-.ec-breadcrumb ul { display: inline-block; }
+.ec-breadcrumb ul {
+    display: inline-block;
+}
+
 .ec-breadcrumb ul li {
     display: inline-block;
     color: #ffffff;
     list-style: none;
 }
+
 .ec-breadcrumb ul li:before {
     color: #ededef;
     content: "\f105";
-    font-family:FontAwesome ;
+    font-family: FontAwesome;
     font-size: 12px;
     padding: 10px;
 }
-.ec-breadcrumb ul li:first-child:before {display: none;}
+
+.ec-breadcrumb ul li:first-child:before {
+    display: none;
+}
+
 .ec-breadcrumb a {
     color: #adb5db;
     font-size: 14px;
 }
 
+
 /* FancyTitle */
+
 .ec-fancy-title {
-	position: relative;
+    position: relative;
 }
+
 .ec-fancy-title h1 {
-	font-size: 20px;
-	margin-top: 0;
+    font-size: 20px;
+    margin-top: 0;
 }
+
 .ec-fancy-title:before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: -.5em;
-	right: 0;
-	display: block;
-	height: 2px;
-	background: -moz-linear-gradient(left,  #3668ca 50%, #e4b83d 0%);
-	background: -webkit-linear-gradient(left,  #3668ca 50%,#e4b83d 0%);
-	background: linear-gradient(to right,  #3668ca 50%,#e4b83d 0%);
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -.5em;
+    right: 0;
+    display: block;
+    height: 2px;
+    background: -moz-linear-gradient(left, #3668ca 50%, #e4b83d 0%);
+    background: -webkit-linear-gradient(left, #3668ca 50%, #e4b83d 0%);
+    background: linear-gradient(to right, #3668ca 50%, #e4b83d 0%);
 }
+
+
 /* Simple Title */
+
 .ec-simple-title {
-	float: left;
-	width: 100%;
-	text-align: center;
-	margin-bottom: 35px;
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
 }
+
 .ec-simple-title h2 {
-	font-size: 28px;
-	margin-bottom: 5px;
+    font-size: 28px;
+    margin-bottom: 5px;
 }
+
 
 /* Blog */
+
 .ec-blog-text h2 {
-	font-size: 18px;
-	margin: 0px 0px 3px 0px;
+    font-size: 18px;
+    margin: 0px 0px 3px 0px;
 }
+
 
 /* Blog Grid */
+
 .ec-blog-grid {
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
+
 .ec-blog-grid figure {
-	margin: 0px;
+    margin: 0px;
 }
-.ec-blog-grid > ul > li {
-	float: none;
-	display: inline-block;
-	vertical-align: top;
-	margin-right: -4px;
+
+.ec-blog-grid>ul>li {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -4px;
 }
+
 .ec-blog-wrap {
-	background-color: #fff;
+    background-color: #fff;
 }
+
 .ec-blog-text {
-	padding: 10px 19px;
+    padding: 10px 19px;
 }
+
 .ec-grid-time {
-	border-top: 1px solid #f3f3f3;
-	padding: 10px 19px;
+    border-top: 1px solid #f3f3f3;
+    padding: 10px 19px;
 }
+
 .ec-grid-time span {
-	float: left;
-	color: #999999;
+    /* float: left; */
+    color: #999999;
 }
-.ec-grid-time span i { margin-right: 4px; }
+
+.ec-grid-time span i {
+    margin-right: 4px;
+}
+
 
 /* UserComment */
-#eccomments {position: relative;}
-#eccomments .ec-fancy-title { margin-bottom: 30px; }
-#eccomments, #eccomments h2, .thumblist, #eccomments ul ul.children {
-	float: left;
-	width: 100%;
- }
 
-#eccomments ul li .thumblist {padding-bottom: 30px;}
+#eccomments {
+    position: relative;
+}
+
+#eccomments .ec-fancy-title {
+    margin-bottom: 30px;
+}
+
+#eccomments,
+#eccomments h2,
+.thumblist,
+#eccomments ul ul.children {
+    float: left;
+    width: 100%;
+}
+
+#eccomments ul li .thumblist {
+    padding-bottom: 30px;
+}
 
 #eccomments ul li {
-	float: left;
-	list-style: none;
-	position: relative;
-	width: 100%;
- }
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
 
-#eccomments ul ul {margin: 0px;}
+#eccomments ul ul {
+    margin: 0px;
+}
 
 #eccomments ul li figure {
-	border-radius: 100%;
-	width: 48px;
-	float: left;
+    border-radius: 100%;
+    width: 48px;
+    float: left;
 }
-#eccomments ul li figure ~ .text {margin: 0px 0px 0px 65px;}
+
+#eccomments ul li figure~.text {
+    margin: 0px 0px 0px 65px;
+}
+
 #eccomments ul li .text {
-	background-color: #fff;
-	padding: 22px 30px 18px 30px;
-	position: relative;
-	box-shadow: 2px 2px 2px 0px #ddd;
+    background-color: #fff;
+    padding: 22px 30px 18px 30px;
+    position: relative;
+    box-shadow: 2px 2px 2px 0px #ddd;
 }
+
 #eccomments ul li .text:before {
-	content: '';
-	position: absolute;
-	left: -14px;
-	top: 0px;
-	border-top: 14px solid #fff;
-	border-left: 14px solid transparent;
+    content: '';
+    position: absolute;
+    left: -14px;
+    top: 0px;
+    border-top: 14px solid #fff;
+    border-left: 14px solid transparent;
 }
+
 #eccomments ul li .text a {
-	display: inline-block;
-	margin: 0px 8px 5px 0px;
-	text-transform: capitalize;
+    display: inline-block;
+    margin: 0px 8px 5px 0px;
+    text-transform: capitalize;
 }
-#eccomments ul li .text p { margin-bottom: 3px; }
-#eccomments ul li .text time i { margin-right: 4px; }
+
+#eccomments ul li .text p {
+    margin-bottom: 3px;
+}
+
+#eccomments ul li .text time i {
+    margin-right: 4px;
+}
+
 #eccomments ul li .text time {
-	color: #bbbbbb;
-	font-size: 12px;
- }
+    color: #bbbbbb;
+    font-size: 12px;
+}
 
 #eccomments ul li .text a.replay-button,
 #eccomments ul li .text a.comment-button {
-	color: #bbbbbb;
-	font-weight: normal;
-	font-size: 12px;
+    color: #bbbbbb;
+    font-weight: normal;
+    font-size: 12px;
 }
+
 #eccomments ul li .text a.replay-button i,
-#eccomments ul li .text a.comment-button i { margin-right: 4px; }
-#eccomments ul ul.children {
-	margin: 0px 0px 30px 0px;
-	padding: 0px 0px 0px 66px;
-	position: relative;
+#eccomments ul li .text a.comment-button i {
+    margin-right: 4px;
 }
+
+#eccomments ul ul.children {
+    margin: 0px 0px 30px 0px;
+    padding: 0px 0px 0px 66px;
+    position: relative;
+}
+
 
 /* Section Heading */
+
 .ec-section-heading {
-	float: left;
-	width: 100%;
-	margin: 0px 0px 32px 0px;
+    float: left;
+    width: 100%;
+    margin: 0px 0px 32px 0px;
 }
+
 .ec-section-heading h2 {
-	margin: 0px 0px 0px 0px;
-	font-size: 28px;
+    margin: 0px 0px 0px 0px;
+    font-size: 28px;
 }
+
 
 /* Shop Listing */
-.ec-shop,.ec-shop-list figure,.ec-shop-list figure .ec-shop-thumb,
+
+.ec-shop,
+.ec-shop-list figure,
+.ec-shop-list figure .ec-shop-thumb,
 .ec-shop-list figure figcaption ul,
 .ec-shop-list .ec-shopinfo {
-	float: left;
-	width: 100%;
+    float: left;
+    width: 100%;
 }
-.ec-shop > ul > li { margin-bottom: 30px; }
+
+.ec-shop>ul>li {
+    margin-bottom: 30px;
+}
+
 .ec-shop ul li {
-	list-style: none;
+    list-style: none;
 }
+
 .ec-shop-list figure {
-	margin-bottom: 0px;
-	overflow: hidden;
+    margin-bottom: 0px;
+    overflow: hidden;
 }
 
 .ec-shop-list .ec-shopinfo {
-	background-color: #fff;
-	text-align: center;
-	padding: 13px 10px 15px 10px;
-	border: 1px solid #f3f3f3;
-	border-top: none;
+    background-color: #fff;
+    text-align: center;
+    padding: 13px 10px 15px 10px;
+    border: 1px solid #f3f3f3;
+    border-top: none;
 }
+
 .ec-shop-list .ec-shopinfo h2 {
-	font-size: 18px;
-	margin-bottom: 0px;
+    font-size: 18px;
+    margin-bottom: 0px;
 }
+
 .ec-shop-list .ec-shopinfo .ec-price {
-	display: inline-block;
-	color: #555555;
-	font-size: 16px;
+    display: inline-block;
+    color: #555555;
+    font-size: 16px;
 }
+
 
 /*  TODO remove the following to rule sets, and add in your markup the bootstrap classes for float left & right */
-.left-section { float: left; }
-.right-section { float: right; }
+
+
+/* 
+.left-section {
+    float: left;
+}
+
+.right-section {
+    float: right;
+} */
+
 
 /* Services */
+
 .ec-services {
-	float: left;
-	width: 100%;
+    float: left;
+    width: 100%;
 }
-.ec-services > ul > li { margin-bottom: 30px; }
+
+.ec-services>ul>li {
+    margin-bottom: 30px;
+}
+
 .ec-services ul li {
-	list-style: none;
+    list-style: none;
 }
+
 
 /* Default Widget */
+
 .ec-main-content .widget {
-	float: left;
-	width: 100%;
-	margin-bottom: 30px;
-	background-color: #fff;
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: #fff;
 }
+
 .ec-main-content .widget_categories ul {
-	float: left;
-	padding: 2px 24px 11px;
-	width: 100%;
+    float: left;
+    padding: 2px 24px 11px;
+    width: 100%;
 }
-.ec-main-content .ec-recentnews_widget > ul {
-	float: left;
-	padding: 14px 20px 0;
-	width: 100%;
+
+.ec-main-content .ec-recentnews_widget>ul {
+    float: left;
+    padding: 14px 20px 0;
+    width: 100%;
 }
+
 
 /* Footer */
+
 .ec-footer-widget {
-	padding: 50px 0px 40px 0px;
-}
-.ec-footer-widget .row { margin: 0px -40px; }
-.ec-footer-widget [class*="col-md-"] { padding: 0px 40px; }
-.ec-footer-widget .widget {
-	margin: 15px 0px;
-}
-.ec-footer-widget p,.ec-footer-widget a {
-	color: #979797;
-}
-.ec-footer-widget h2 {
-	color: #fff;
-}
-.ec-footer-widget .ec-section-heading { margin-bottom: 26px; }
-.ec-footer-widget .ec-section-heading h2 {
-	font-size: 18px;
+    padding: 50px 0px 40px 0px;
 }
 
-/* Recent News */
-.ec-recentnews_widget ul li {
-	list-style: none;
-	margin-bottom: 22px;
+.ec-footer-widget .row {
+    margin: 0px -40px;
 }
+
+.ec-footer-widget [class*="col-md-"] {
+    padding: 0px 40px;
+}
+
+.ec-footer-widget .widget {
+    margin: 15px 0px;
+}
+
+.ec-footer-widget p,
+.ec-footer-widget a {
+    color: #979797;
+}
+
+.ec-footer-widget h2 {
+    color: #fff;
+}
+
+.ec-footer-widget .ec-section-heading {
+    margin-bottom: 26px;
+}
+
+.ec-footer-widget .ec-section-heading h2 {
+    font-size: 18px;
+}
+
+
+/* Recent News */
+
+.ec-recentnews_widget ul li {
+    list-style: none;
+    margin-bottom: 22px;
+}
+
 .ec-recentnews_widget ul li,
 .ec-recentnews_widget ul li figure a,
 .ec-recentnews_widget ul li figure img {
-	float: left;
-	width: 100%;
+    float: left;
+    width: 100%;
 }
+
 .ec-recentnews_widget ul li figure {
-	float: left;
-	width: 64px;
-	margin: 0px;
+    float: left;
+    width: 64px;
+    margin: 0px;
 }
-.ec-recentnews_widget ul li figure ~ section {
-	padding-left: 79px;
+
+.ec-recentnews_widget ul li figure~section {
+    padding-left: 79px;
 }
+
 .ec-recentnews_widget ul li section h6 {
-	margin-bottom: 0px;
+    margin-bottom: 0px;
 }
+
 .ec-recentnews_widget ul li section span {
-	color: #979797;
-	font-size: 12px;
-	font-weight: 600;
+    color: #979797;
+    font-size: 12px;
+    font-weight: 600;
 }
+
 .ec-recentnews_widget ul li section span i {
-	margin-right: 4px;
+    margin-right: 4px;
 }
+
 
 /* Categories */
+
 .widget_categories ul li {
-	float: left;
-	width: 100%;
-	list-style: none;
-	padding: 1px 0px 1px 0px;
-	text-align: right;
-}
-.widget_categories ul li a {
-	float: left;
-}
-.widget_categories ul li a::before {
-	content: "\f0da";
-	font-family: FontAwesome;
-	display: inline-block;
-	padding: 0px 25px 0px 0px;
-	color: #979797;
+    float: left;
+    width: 100%;
+    list-style: none;
+    padding: 1px 0px 1px 0px;
+    text-align: right;
 }
 
+.widget_categories ul li a {
+    float: left;
+}
+
+.widget_categories ul li a::before {
+    content: "\f0da";
+    font-family: FontAwesome;
+    display: inline-block;
+    padding: 0px 25px 0px 0px;
+    color: #979797;
+}
+
+
 /* Newsletter */
+
 .widget_text_info ul {
-	float: left;
-	width: 100%;
-	margin-bottom: 30px;
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
 }
+
 .widget_text_info ul li {
-	float: left;
-	width: 100%;
-	padding: 0px 0px 0px 33px;
-	position: relative;
-	margin-bottom: 2px;
+    float: left;
+    width: 100%;
+    padding: 0px 0px 0px 33px;
+    position: relative;
+    margin-bottom: 2px;
 }
+
 .widget_text_info ul li i {
-	position: absolute;
-	left: 0px;
-	top: 3px;
-	width: 21px;
-	height: 21px;
-	color: #999999;
-	background-color: #292929;
-	text-align: center;
-	border-radius: 100%;
-	font-size: 11px;
-	padding: 5px 0px 0px 0px;
+    position: absolute;
+    left: 0px;
+    top: 3px;
+    width: 21px;
+    height: 21px;
+    color: #999999;
+    background-color: #292929;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 11px;
+    padding: 5px 0px 0px 0px;
 }
+
 .widget_text_info ul li span {
-	float: left;
-	color: #979797;
-	font-weight: 500;
+    float: left;
+    color: #979797;
+    font-weight: 500;
 }
-.ec-newsletter,.ec-newsletter span,
+
+.ec-newsletter,
+.ec-newsletter span,
 .ec-newsletter form,
 .ec-newsletter form input[type="text"],
-.ec-newsletter form input[type="submit"] {
-	float: left;
-	width: 100%;
+.ec-newsletter form input[type="submit"],
+.ec-newsletter form input[type="email"],
+.ec-newsletter form button {
+    float: left;
+    width: 100%;
 }
+
+
 /* Bottom Section */
+
 .ec-bottom-section {
-	padding: 20px 0px;
+    padding: 20px 0px;
 }
 
 .backtop-btn i {
-	width: 22px;
-	height: 22px;
-	color: #fff;
-	background-color: #333;
-	font-size: 12px;
-	border-radius: 100%;
-	float: right;
-	margin-left: 5px;
-	text-align: center;
-	padding: 4px 0px 0px 1px;
+    width: 22px;
+    height: 22px;
+    color: #fff;
+    background-color: #333;
+    font-size: 12px;
+    border-radius: 100%;
+    float: right;
+    margin-left: 5px;
+    text-align: center;
+    padding: 4px 0px 0px 1px;
 }
+
 .fb-anchor {
-	position: fixed;
-	right: 0px;
-	top: 45%;
-	background-color: #3b5998;
-	color: #ffffff;
-	font-size: 16px;
-	text-transform: uppercase;
-	padding: 11px 20px;
-	font-weight: bold;
-	z-index: 999;
+    position: fixed;
+    right: 0px;
+    top: 45%;
+    background-color: #3b5998;
+    color: #ffffff;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 11px 20px;
+    font-weight: bold;
+    z-index: 999;
 }
+
 .fb-anchor::before {
-	content: '';
-	position: absolute;
-	right: 0px;
-	top: -10px;
-	border-bottom: 10px solid #3b5998;
-	border-left: 10px solid transparent;
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: -10px;
+    border-bottom: 10px solid #3b5998;
+    border-left: 10px solid transparent;
 }
+
 .fb-anchor::after {
-	content: '';
-	position: absolute;
-	right: 0px;
-	bottom: -10px;
-	border-top: 10px solid #3b5998;
-	border-left: 10px solid transparent;
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: -10px;
+    border-top: 10px solid #3b5998;
+    border-left: 10px solid transparent;
 }
