@@ -3,7 +3,7 @@
 
     // Sticky Header Function
     // TODO Write a performant scroll event handler.
-    // Use a technic of your choise.
+    // Use a technique of your choice.
     // Use of jQuery is optional.
     // TIP: Depending on the approach you might consider browser compatibility issues, and present alternatives.
     jQuery(window).scroll(function() {

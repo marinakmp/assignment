@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 /* TODO load fonts in your markup.
-Visit https://fonts.google.com/ select your font, customise youe selection, and embed the required fonts */
+Visit https://fonts.google.com/ select your font, customise your selection, and embed the required fonts */
 @import url(https://fonts.googleapis.com/css?family=Oswald:400&subset=latin);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,greek);
 
-/* NOTE: The following 2 tasks refer to the whole css document. */
-/* TODO Group common properties. */
+/* NOTE: The following 3 tasks refer to the whole css document. */
+/* TODO Group common rules, and properties. */
 /* TODO Make this css file more performant: use Bootstrap's css classes, where appropriate, to replace css rules or rule sets. */
-/* TODO Last thing to do: Remove reduntadant rule sets, or properties */
+/* TODO Last thing to do: Remove redundant rule sets, or properties */
 
 * {
 	margin: 0;
