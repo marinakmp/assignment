@@ -29,7 +29,7 @@
                                 <li><i class="fa fa-phone"></i> +00 123 456 789</li>
                                 <li><i class="fa fa-envelope-o"></i>
                                     <!-- TODO Create a hyperlink to the following email address -->
-                                    info@example.com
+                                    <a href="mailto:info@example.com">info@example.com</a>
                                 </li>
                             </ul>
                             <div class="ec-watch-section">
@@ -67,17 +67,17 @@
                 <!-- TODO Remove what needs to be removed.
                      TIP: Is this pattern used in other sections of this document? -->
                 <div class="row">
-                    <div class="col-md-12">
+                   <!-- <div class="col-md-12"> -->
                         <div class="jumbotron">
                             <!-- TODO Replace the following span with a heading element and style it "fancy" (styles are provided).
                             Further changes in markup might also apply.
                             Find the rule-set in your css file, and proceed accoardingly to the required modifications. -->
-                            <span>Sports Daily your sports blog</span>
+                            <h5>Sports Daily your sports blog</h5>
                             <h2>Boss 'understands if striker wanted move</h2>
                             <p>Vardy has been one of the stars of the season so far and is currently the top scorer. in the Premier League with 10 goals to his name.</p>
                             <a href="#" class="btn btn-lg btn-primary">FREE ENTER</a>
                         </div>
-                    </div>
+                    <!--</div>-->
                 </div>
             </div>
 
@@ -143,10 +143,10 @@
                         </div>
                     </div>
                 </div>
-            </div>
+           
 
-            <div class="ec-main-section">
-                <div class="container">
+            
+                <div class="container ">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="ec-testimonial">
@@ -158,9 +158,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            
 
-            <div class="ec-main-section">
+            
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -264,14 +264,14 @@
                         <aside class="widget col-md-4 widget_categories">
                             <div class="ec-section-heading"><h2>CATEGORY</h2></div>
                             <!-- TODO use your UI framework nav component -->
-                            <ul>
-                                <li><a href="#">Boxing</a> 03</li>
-                                <li><a href="#">Championship</a> 05</li>
-                                <li><a href="#">Cycling</a> 03</li>
-                                <li><a href="#">Football</a> 19</li>
-                                <li><a href="#">NFL</a> 02</li>
-                                <li><a href="#">Golf</a> 11</li>
-                                <li><a href="#">Premier League</a> 12</li>
+                            <ul class="nav nav-pills nav-stacked">
+                                <li class="nav-item"><a href="#">Boxing</a> 03</li>
+                                <li class="nav-item"><a href="#">Championship</a> 05</li>
+                                <li class="nav-item"><a href="#">Cycling</a> 03</li>
+                                <li class="nav-item"><a href="#">Football</a> 19</li>
+                                <li class="nav-item"><a href="#">NFL</a> 02</li>
+                                <li class="nav-item"><a href="#">Golf</a> 11</li>
+                                <li class="nav-item"><a href="#">Premier League</a> 12</li>
                             </ul>
                         </aside>
                         <aside class="widget col-md-4 widget_text_info">
@@ -297,9 +297,9 @@
                                 <form>
                                     <ul class="list-unstyled">
                                         <li>
-                                            <input type="text" value="Your Name" onblur="if(this.value == '') { this.value ='Your Name'; }" onfocus="if(this.value =='Your Name') { this.value = ''; }"> </li>
+                                            <input type="text" value="Your Name" onblur="if(this.value == '') placeholder ='Your Name' onfocus="if(this.value =='Your Name') { this.value = ''; }"> </li>
                                         <li>
-                                            <input type="text" value="Enter email address" onblur="if(this.value == '') { this.value ='Enter email address'; }" onfocus="if(this.value =='Enter email address') { this.value = ''; }">
+                                            <input type="email" value="Enter email address" onblur="if(this.value == '') placeholder ='Enter email address' onfocus="if(this.value =='Enter email address') { this.value = ''; }">
                                         </li>
                                         <li>
                                             <input type="submit" value="Sign up" class="ec-bgcolor"> </li>
@@ -325,10 +325,23 @@
         </footer>
     </div>
 
+
+    
     <!-- TODO Load framework scripts from a CDN provider. Think about performance. -->
-    <script src="scripts/jquery.js"></script>
+    <script src="scripts/jquery.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+			  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+              crossorigin="anonymous"></script>
+              
     <script src="scripts/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 
     <script src="scripts/app.js"></script>
+
+
+
 </body>
 </html>
+
+

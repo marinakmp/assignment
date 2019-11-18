@@ -5,6 +5,10 @@ Visit https://fonts.google.com/ select your font, customise your selection, and 
 @import url(https://fonts.googleapis.com/css?family=Oswald:400&subset=latin);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,greek);
 
+@import url('https://fonts.googleapis.com/css?family=Oswald|Roboto:400,700&display=swap&subset=greek');
+
+
+
 /* NOTE: The following 3 tasks refer to the whole css document. */
 /* TODO Group common rules, and properties. */
 /* TODO Make this css file more performant: use Bootstrap's css classes, where appropriate, to replace css rules or rule sets. */
@@ -91,6 +95,12 @@ img {
 	height: auto;
 	max-width: 100%;
  }
+
+img-responsive{
+	max-width: 100%;
+	height: auto;
+	display: block;
+} 
 
 /* Forms */
 select {
