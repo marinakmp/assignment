@@ -10,6 +10,7 @@ Visit https://fonts.google.com/ select your font, customise your selection, and 
 /* TODO Make this css file more performant: use Bootstrap's css classes, where appropriate, to replace css rules or rule sets. */
 /* TODO Last thing to do: Remove redundant rule sets, or properties */
 
+
 * {
 	margin: 0;
 	padding: 0;
@@ -646,4 +647,10 @@ form p {
 	bottom: -10px;
 	border-top: 10px solid #3b5998;
 	border-left: 10px solid transparent;
+}
+
+.list-unstyled li:focus::placeholder{
+	
+       color:transparent;
+ 
 }
