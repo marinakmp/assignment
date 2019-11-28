@@ -21,5 +21,12 @@
         }, 800);
         return false;
     });
+    //if email address is empty prevent submission
+    jQuery('.submit').click(function(event){
+        if( jQuery('.email').val().length === 0 ) {
+            event.preventDefault();
+            alert("Please enter email address");
+        }
+    });
 
 }(jQuery));

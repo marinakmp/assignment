@@ -29,7 +29,7 @@
                                 <li><i class="fa fa-phone"></i> +00 123 456 789</li>
                                 <li><i class="fa fa-envelope-o"></i>
                                     <!-- TODO Create a hyperlink to the following email address -->
-                                    info@example.com
+                                    <a href="mailto:info@example.com">info@example.com</a>
                                 </li>
                             </ul>
                             <div class="ec-watch-section">
@@ -106,7 +106,7 @@
                                                 <p>Lorem ipsum dolor sit amet, consectetur.</p>
                                             </div>
                                             <!-- TODO The UI 'breaks' in this point. Add the missing css class (provided by the UI framework). -->
-                                            <div class="ec-grid-time">
+                                            <div class="ec-grid-time container-fluid">
                                                 <span><i class="fa fa-clock-o"></i> 3 hours ago</span>
                                             </div>
                                         </div>
@@ -120,7 +120,7 @@
                                                 <h2><a href="#">The summer of 2014 was understandably all about the</a></h2>
                                                 <p>Lorem ipsum dolor sit amet, consectetur.</p>
                                             </div>
-                                            <div class="ec-grid-time">
+                                            <div class="ec-grid-time container-fluid">
                                                 <span><i class="fa fa-clock-o"></i> 1 hours ago</span>
                                             </div>
                                         </div>
@@ -133,7 +133,7 @@
                                                 <h2><a href="#">Sevilla finished fifth and just out of the Champions League spots</a></h2>
                                                 <p>Lorem ipsum dolor sit amet, consectetur.</p>
                                             </div>
-                                            <div class="ec-grid-time">
+                                            <div class="ec-grid-time container-fluid">
                                                 <span><i class="fa fa-clock-o"></i> 1 day ago</span>
                                             </div>
                                         </div>
@@ -172,9 +172,9 @@
                                     <!-- TODO Use the correct Bootstrap css classes to make the following list item element span in...
                                      a) 2 columns in view port width 768 and up
                                      b) 4 columns in view port width 992 and up -->
-                                    <li class="...">
+                                    <li class="col-sm-6 col-md-3"> 
                                         <figure>
-                                            <a href="#" class="ec-shop-thumb"><img src="img/shop-list-1.jpg" alt=""></a>
+                                            <a href="#" class="ec-shop-thumb"><img class="img-responsive" src="img/shop-list-1.jpg" alt=""></a>
                                         </figure>
                                         <div class="ec-shopinfo">
                                             <h2><a href="#">Sports cap</a></h2>
@@ -183,9 +183,9 @@
                                             </span>
                                         </div>
                                     </li>
-                                    <li class="...">
+                                    <li class="col-sm-6 col-md-3">
                                         <figure>
-                                            <a href="#" class="ec-shop-thumb"><img src="img/shop-list-1.jpg" alt=""></a>
+                                            <a href="#" class="ec-shop-thumb"><img class="img-responsive" src="img/shop-list-1.jpg" alt=""></a>
                                         </figure>
                                         <div class="ec-shopinfo">
                                             <h2><a href="#">Sports cap</a></h2>
@@ -194,9 +194,9 @@
                                             </span>
                                         </div>
                                     </li>
-                                    <li class="...">
+                                    <li class="col-sm-6 col-md-3">
                                         <figure>
-                                            <a href="#" class="ec-shop-thumb"><img src="img/shop-list-1.jpg" alt=""></a>
+                                            <a href="#" class="ec-shop-thumb"><img class="img-responsive" src="img/shop-list-1.jpg" alt=""></a>
                                         </figure>
                                         <div class="ec-shopinfo">
                                             <h2><a href="#">Sports cap</a></h2>
@@ -205,9 +205,9 @@
                                             </span>
                                         </div>
                                     </li>
-                                    <li class="...">
+                                    <li class="col-sm-6 col-md-3">
                                         <figure>
-                                            <a href="#" class="ec-shop-thumb"><img src="img/shop-list-1.jpg" alt=""></a>
+                                            <a href="#" class="ec-shop-thumb"><img class="img-responsive" src="img/shop-list-1.jpg" alt=""></a>
                                         </figure>
                                         <div class="ec-shopinfo">
                                             <h2><a href="#">Sports cap</a></h2>
@@ -264,14 +264,14 @@
                         <aside class="widget col-md-4 widget_categories">
                             <div class="ec-section-heading"><h2>CATEGORY</h2></div>
                             <!-- TODO use your UI framework nav component -->
-                            <ul>
-                                <li><a href="#">Boxing</a> 03</li>
-                                <li><a href="#">Championship</a> 05</li>
-                                <li><a href="#">Cycling</a> 03</li>
-                                <li><a href="#">Football</a> 19</li>
-                                <li><a href="#">NFL</a> 02</li>
-                                <li><a href="#">Golf</a> 11</li>
-                                <li><a href="#">Premier League</a> 12</li>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link" href="#">Boxing</a> 03</li>
+                                <li class="nav-item"><a class="nav-link" href="#">Championship</a> 05</li>
+                                <li class="nav-item"><a class="nav-link" href="#">Cycling</a> 03</li>
+                                <li class="nav-item"><a class="nav-link" href="#">Football</a> 19</li>
+                                <li class="nav-item"><a class="nav-link" href="#">NFL</a> 02</li>
+                                <li class="nav-item"><a class="nav-link" href="#">Golf</a> 11</li>
+                                <li class="nav-item"><a class="nav-link" href="#">Premier League</a> 12</li>
                             </ul>
                         </aside>
                         <aside class="widget col-md-4 widget_text_info">
@@ -296,13 +296,15 @@
                                 <!-- TODO Choose an appropriate HTML5 element to replace the element that submits the form. -->
                                 <form>
                                     <ul class="list-unstyled">
-                                        <li>
-                                            <input type="text" value="Your Name" onblur="if(this.value == '') { this.value ='Your Name'; }" onfocus="if(this.value =='Your Name') { this.value = ''; }"> </li>
-                                        <li>
-                                            <input type="text" value="Enter email address" onblur="if(this.value == '') { this.value ='Enter email address'; }" onfocus="if(this.value =='Enter email address') { this.value = ''; }">
+                                        <li class="form-group">
+                                            <input class="form-control" type="text" value="" placeholder="Your name"> 
                                         </li>
-                                        <li>
-                                            <input type="submit" value="Sign up" class="ec-bgcolor"> </li>
+                                        <li class="form-group">
+                                            <input class="form-control email" type="email" value="" placeholder="Enter email address">
+                                        </li>
+                                        <li class="form-group">
+                                            <button type="form-control submit" class="btn btn-default submit">Sign up</button>
+                                        </li>
                                     </ul>
                                 </form>
                             </div>
@@ -326,8 +328,8 @@
     </div>
 
     <!-- TODO Load framework scripts from a CDN provider. Think about performance. -->
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <script src="scripts/app.js"></script>
 </body>

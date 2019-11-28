@@ -91,7 +91,10 @@ img {
 	height: auto;
 	max-width: 100%;
  }
-
+ /* added extra rule to Bootstrap class to fix responsive. We'll use this class where necessary */
+.img-responsive {
+	width: 100%;
+}
 /* Forms */
 select {
 	border: 1px solid #dfdfdf;
@@ -339,6 +342,11 @@ form p {
 }
 .ec-blog-wrap {
 	background-color: #fff;
+	position: relative;
+}
+.ec-featured-star {
+	position: absolute;
+	left: 0;
 }
 .ec-blog-text {
 	padding: 10px 19px;
@@ -646,4 +654,17 @@ form p {
 	bottom: -10px;
 	border-top: 10px solid #3b5998;
 	border-left: 10px solid transparent;
+}
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #3d3d3d;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #3d3d3d;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #3d3d3d;
 }
