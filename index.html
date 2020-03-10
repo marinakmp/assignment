@@ -29,7 +29,7 @@
                                 <li><i class="fa fa-phone"></i> +00 123 456 789</li>
                                 <li><i class="fa fa-envelope-o"></i>
                                     <!-- TODO Create a hyperlink to the following email address -->
-                                    info@example.com
+                                    <a href="mailto:info@example.com">info</a>
                                 </li>
                             </ul>
                             <div class="ec-watch-section">
@@ -66,19 +66,19 @@
                 <!-- NOTE: Let's use our UI framework wisely. Is the use of a grid nessesary in the following code block? -->
                 <!-- TODO Remove what needs to be removed.
                      TIP: Is this pattern used in other sections of this document? -->
-                <div class="row">
-                    <div class="col-md-12">
                         <div class="jumbotron">
                             <!-- TODO Replace the following span with a heading element and style it "fancy" (styles are provided).
                             Further changes in markup might also apply.
                             Find the rule-set in your css file, and proceed accoardingly to the required modifications. -->
-                            <span>Sports Daily your sports blog</span>
+                            <h1 class="ec-fancy-title">Sports Daily your sports blog</h1>
                             <h2>Boss 'understands if striker wanted move</h2>
                             <p>Vardy has been one of the stars of the season so far and is currently the top scorer. in the Premier League with 10 goals to his name.</p>
                             <a href="#" class="btn btn-lg btn-primary">FREE ENTER</a>
                         </div>
-                    </div>
-                </div>
+                        <div class="ec-simple-title">
+                            <h2>Latest news</h2>
+                            <p>Bafe Gomis’ header sealed the comeback for Garry Monk’s side, who went on to complete the double over Arsenal later</p>
+                        </div>
             </div>
 
             <!-- TODO Too many 'ec-main-section', and containers in this document. Not good...
@@ -86,12 +86,12 @@
             <div class="ec-main-section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="ec-simple-title">
-                                <h2>Latest news</h2>
-                                <p>Bafe Gomis’ header sealed the comeback for Garry Monk’s side, who went on to complete the double over Arsenal later</p>
-                            </div>
-                        </div>
+<!--                        <div class="col-md-12">-->
+<!--                            <div class="ec-simple-title">-->
+<!--                                <h2>Latest news</h2>-->
+<!--                                <p>Bafe Gomis’ header sealed the comeback for Garry Monk’s side, who went on to complete the double over Arsenal later</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
                         <div class="col-md-12">
                             <div class="ec-blog ec-blog-grid">
                                 <ul class="row">
@@ -99,14 +99,14 @@
                                         <!-- TODO Using CSS position the star icon at the top left of the news car -->
                                         <div class="ec-blog-wrap">
                                             <figure>
-                                                <a href="#"><img src="img/blog-grid-1.jpg" alt=""></a> <span class="ec-featured-star ec-bgcolor"><i class="fa fa-star"></i></span>
+                                                <span class="ec-featured-star ec-bgcolor "> <a href="#"><i class="fa fa-star "></i><img src="img/blog-grid-1.jpg" alt=""></a> </span>
                                             </figure>
                                             <div class="ec-blog-text">
                                                 <h2><a href="#">United, Palace Aim To Rebound From Setbacks</a></h2>
                                                 <p>Lorem ipsum dolor sit amet, consectetur.</p>
                                             </div>
                                             <!-- TODO The UI 'breaks' in this point. Add the missing css class (provided by the UI framework). -->
-                                            <div class="ec-grid-time">
+                                            <div class="ec-grid-time clearfix">
                                                 <span><i class="fa fa-clock-o"></i> 3 hours ago</span>
                                             </div>
                                         </div>
@@ -114,13 +114,13 @@
                                     <li class="col-md-4">
                                         <div class="ec-blog-wrap">
                                             <figure>
-                                                <a href="#"><img src="img/blog-grid-1.jpg" alt=""></a>
+                                                <span class="ec-featured-star ec-bgcolor "> <a href="#"><i class="fa fa-star "></i><img src="img/blog-grid-1.jpg" alt=""></a> </span>
                                             </figure>
                                             <div class="ec-blog-text">
                                                 <h2><a href="#">The summer of 2014 was understandably all about the</a></h2>
                                                 <p>Lorem ipsum dolor sit amet, consectetur.</p>
                                             </div>
-                                            <div class="ec-grid-time">
+                                            <div class="ec-grid-time clearfix">
                                                 <span><i class="fa fa-clock-o"></i> 1 hours ago</span>
                                             </div>
                                         </div>
@@ -128,12 +128,13 @@
                                     <li class="col-md-4">
                                         <div class="ec-blog-wrap">
                                             <figure>
-                                                <a href="#"><img src="img/blog-grid-1.jpg" alt=""></a> <span class="ec-featured-star ec-bgcolor"><i class="fa fa-star"></i></span></figure>
+                                                <span class="ec-featured-star ec-bgcolor "> <a href="#"><i class="fa fa-star "></i><img src="img/blog-grid-1.jpg" alt=""></a> </span>
+                                            </figure>
                                             <div class="ec-blog-text">
                                                 <h2><a href="#">Sevilla finished fifth and just out of the Champions League spots</a></h2>
                                                 <p>Lorem ipsum dolor sit amet, consectetur.</p>
                                             </div>
-                                            <div class="ec-grid-time">
+                                            <div class="ec-grid-time clearfix">
                                                 <span><i class="fa fa-clock-o"></i> 1 day ago</span>
                                             </div>
                                         </div>
@@ -172,7 +173,7 @@
                                     <!-- TODO Use the correct Bootstrap css classes to make the following list item element span in...
                                      a) 2 columns in view port width 768 and up
                                      b) 4 columns in view port width 992 and up -->
-                                    <li class="...">
+                                    <li class="col-md-6 col-lg-3">
                                         <figure>
                                             <a href="#" class="ec-shop-thumb"><img src="img/shop-list-1.jpg" alt=""></a>
                                         </figure>
@@ -183,7 +184,7 @@
                                             </span>
                                         </div>
                                     </li>
-                                    <li class="...">
+                                    <li class="col-md-6 col-lg-3">
                                         <figure>
                                             <a href="#" class="ec-shop-thumb"><img src="img/shop-list-1.jpg" alt=""></a>
                                         </figure>
@@ -194,7 +195,7 @@
                                             </span>
                                         </div>
                                     </li>
-                                    <li class="...">
+                                    <li class="col-md-6 col-lg-3">
                                         <figure>
                                             <a href="#" class="ec-shop-thumb"><img src="img/shop-list-1.jpg" alt=""></a>
                                         </figure>
@@ -205,7 +206,7 @@
                                             </span>
                                         </div>
                                     </li>
-                                    <li class="...">
+                                    <li class="col-md-6 col-lg-3">
                                         <figure>
                                             <a href="#" class="ec-shop-thumb"><img src="img/shop-list-1.jpg" alt=""></a>
                                         </figure>
@@ -264,15 +265,17 @@
                         <aside class="widget col-md-4 widget_categories">
                             <div class="ec-section-heading"><h2>CATEGORY</h2></div>
                             <!-- TODO use your UI framework nav component -->
-                            <ul>
-                                <li><a href="#">Boxing</a> 03</li>
-                                <li><a href="#">Championship</a> 05</li>
-                                <li><a href="#">Cycling</a> 03</li>
-                                <li><a href="#">Football</a> 19</li>
-                                <li><a href="#">NFL</a> 02</li>
-                                <li><a href="#">Golf</a> 11</li>
-                                <li><a href="#">Premier League</a> 12</li>
-                            </ul>
+                            <nav>
+                                <ul>
+                                    <li><a href="#">Boxing</a> 03</li>
+                                    <li><a href="#">Championship</a> 05</li>
+                                    <li><a href="#">Cycling</a> 03</li>
+                                    <li><a href="#">Football</a> 19</li>
+                                    <li><a href="#">NFL</a> 02</li>
+                                    <li><a href="#">Golf</a> 11</li>
+                                    <li><a href="#">Premier League</a> 12</li>
+                                </ul>
+                            </nav>
                         </aside>
                         <aside class="widget col-md-4 widget_text_info">
                             <div class="ec-section-heading"><h2>Contact</h2></div>
@@ -299,10 +302,10 @@
                                         <li>
                                             <input type="text" value="Your Name" onblur="if(this.value == '') { this.value ='Your Name'; }" onfocus="if(this.value =='Your Name') { this.value = ''; }"> </li>
                                         <li>
-                                            <input type="text" value="Enter email address" onblur="if(this.value == '') { this.value ='Enter email address'; }" onfocus="if(this.value =='Enter email address') { this.value = ''; }">
+                                            <input type="email" value="Enter email address" onblur="if(this.value == '') { this.value ='Enter email address'; }" onfocus="if(this.value =='Enter email address') { this.value = ''; } required">
                                         </li>
-                                        <li>
-                                            <input type="submit" value="Sign up" class="ec-bgcolor"> </li>
+                                        <button>
+                                            <input type="submit" value="Sign up" class="ec-bgcolor"> </button>
                                     </ul>
                                 </form>
                             </div>
