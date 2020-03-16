@@ -29,7 +29,7 @@
                                 <li><i class="fa fa-phone"></i> +00 123 456 789</li>
                                 <li><i class="fa fa-envelope-o"></i>
                                     <!-- TODO Create a hyperlink to the following email address -->
-                                    <a href="mailto:info@example.com">info</a>
+                                    <a href="mailto:info@example.com">info@example.com</a>
                                 </li>
                             </ul>
                             <div class="ec-watch-section">
@@ -47,12 +47,12 @@
                     <div class="ec-right-section">
                         <nav class="ec-navigation">
                             <ul>
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="about-us.html">about us</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="#">Shop</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li class="active"><a href="index.html" class="nav-link">Home</a></li>
+                                <li><a href="about-us.html" class="nav-link">about us</a></li>
+                                <li><a href="#" class="nav-link">Blog</a></li>
+                                <li><a href="#" class="nav-link">Gallery</a></li>
+                                <li><a href="#" class="nav-link">Shop</a></li>
+                                <li><a href="#" class="nav-link">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -61,7 +61,7 @@
         </header>
 
         <!-- Page main content -->
-        <div class="ec-main-content" id="pageMain">
+        <main class="ec-main-content" id="pageMain">
             <div class="container">
                 <!-- NOTE: Let's use our UI framework wisely. Is the use of a grid nessesary in the following code block? -->
                 <!-- TODO Remove what needs to be removed.
@@ -75,10 +75,6 @@
                             <p>Vardy has been one of the stars of the season so far and is currently the top scorer. in the Premier League with 10 goals to his name.</p>
                             <a href="#" class="btn btn-lg btn-primary">FREE ENTER</a>
                         </div>
-                        <div class="ec-simple-title">
-                            <h2>Latest news</h2>
-                            <p>Bafe Gomis’ header sealed the comeback for Garry Monk’s side, who went on to complete the double over Arsenal later</p>
-                        </div>
             </div>
 
             <!-- TODO Too many 'ec-main-section', and containers in this document. Not good...
@@ -86,20 +82,17 @@
             <div class="ec-main-section">
                 <div class="container">
                     <div class="row">
-<!--                        <div class="col-md-12">-->
-<!--                            <div class="ec-simple-title">-->
-<!--                                <h2>Latest news</h2>-->
-<!--                                <p>Bafe Gomis’ header sealed the comeback for Garry Monk’s side, who went on to complete the double over Arsenal later</p>-->
-<!--                            </div>-->
-<!--                        </div>-->
-                        <div class="col-md-12">
+                            <div class="ec-simple-title">
+                                <h2>Latest news</h2>
+                                <p>Bafe Gomis’ header sealed the comeback for Garry Monk’s side, who went on to complete the double over Arsenal later</p>
+                            </div>
                             <div class="ec-blog ec-blog-grid">
                                 <ul class="row">
                                     <li class="col-md-4">
                                         <!-- TODO Using CSS position the star icon at the top left of the news car -->
                                         <div class="ec-blog-wrap">
                                             <figure>
-                                                <span class="ec-featured-star ec-bgcolor "> <a href="#"><i class="fa fa-star "></i><img src="img/blog-grid-1.jpg" alt=""></a> </span>
+                                                <a href="#"><img src="img/blog-grid-1.jpg" alt=""><span class="ec-featured-star ec-bgcolor"><i class="fa fa-star"></i></span></a>
                                             </figure>
                                             <div class="ec-blog-text">
                                                 <h2><a href="#">United, Palace Aim To Rebound From Setbacks</a></h2>
@@ -114,7 +107,7 @@
                                     <li class="col-md-4">
                                         <div class="ec-blog-wrap">
                                             <figure>
-                                                <span class="ec-featured-star ec-bgcolor "> <a href="#"><i class="fa fa-star "></i><img src="img/blog-grid-1.jpg" alt=""></a> </span>
+                                                <a href="#"><img src="img/blog-grid-1.jpg" alt=""></a>
                                             </figure>
                                             <div class="ec-blog-text">
                                                 <h2><a href="#">The summer of 2014 was understandably all about the</a></h2>
@@ -128,7 +121,7 @@
                                     <li class="col-md-4">
                                         <div class="ec-blog-wrap">
                                             <figure>
-                                                <span class="ec-featured-star ec-bgcolor "> <a href="#"><i class="fa fa-star "></i><img src="img/blog-grid-1.jpg" alt=""></a> </span>
+                                                <a href="#"><img src="img/blog-grid-1.jpg" alt=""></a><span class="ec-featured-star ec-bgcolor"><i class="fa fa-star"></i></span>
                                             </figure>
                                             <div class="ec-blog-text">
                                                 <h2><a href="#">Sevilla finished fifth and just out of the Champions League spots</a></h2>
@@ -141,22 +134,18 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
             <div class="ec-main-section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
                             <div class="ec-testimonial">
-                                <div>
+                                <blockquote>
                                     <p>Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced</p>
                                     <p>Aldous Huxley, New York Times</p>
-                                </div>
+                                </blockquote>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -164,16 +153,14 @@
             <div class="ec-main-section">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="ec-section-heading"><h2>Our Favourite Shop</h2></div>
+                        <div class="ec-section-heading"><h2>Our Favourite Shop</h2></div>
                         </div>
-                        <div class="col-md-12">
-                            <div class="ec-shop ec-shop-list">
+                        <div class="ec-shop ec-shop-list">
                                 <ul class="row">
                                     <!-- TODO Use the correct Bootstrap css classes to make the following list item element span in...
                                      a) 2 columns in view port width 768 and up
                                      b) 4 columns in view port width 992 and up -->
-                                    <li class="col-md-6 col-lg-3">
+                                    <li class="col-sm-6 col-md-3">
                                         <figure>
                                             <a href="#" class="ec-shop-thumb"><img src="img/shop-list-1.jpg" alt=""></a>
                                         </figure>
@@ -184,7 +171,7 @@
                                             </span>
                                         </div>
                                     </li>
-                                    <li class="col-md-6 col-lg-3">
+                                    <li class="col-sm-6 col-md-3">
                                         <figure>
                                             <a href="#" class="ec-shop-thumb"><img src="img/shop-list-1.jpg" alt=""></a>
                                         </figure>
@@ -195,7 +182,7 @@
                                             </span>
                                         </div>
                                     </li>
-                                    <li class="col-md-6 col-lg-3">
+                                    <li class="col-sm-6 col-md-3">
                                         <figure>
                                             <a href="#" class="ec-shop-thumb"><img src="img/shop-list-1.jpg" alt=""></a>
                                         </figure>
@@ -206,7 +193,7 @@
                                             </span>
                                         </div>
                                     </li>
-                                    <li class="col-md-6 col-lg-3">
+                                    <li class="col-sm-6 col-md-3">
                                         <figure>
                                             <a href="#" class="ec-shop-thumb"><img src="img/shop-list-1.jpg" alt=""></a>
                                         </figure>
@@ -219,11 +206,10 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
 
         <!-- Footer -->
         <footer id="ec-footer">
@@ -298,15 +284,15 @@
                                 <!-- TODO Prevent form submission when the value of the email address field is empty. -->
                                 <!-- TODO Choose an appropriate HTML5 element to replace the element that submits the form. -->
                                 <form>
-                                    <ul class="list-unstyled">
-                                        <li>
-                                            <input type="text" value="Your Name" onblur="if(this.value == '') { this.value ='Your Name'; }" onfocus="if(this.value =='Your Name') { this.value = ''; }"> </li>
-                                        <li>
-                                            <input type="email" value="Enter email address" onblur="if(this.value == '') { this.value ='Enter email address'; }" onfocus="if(this.value =='Enter email address') { this.value = ''; } required">
-                                        </li>
-                                        <button>
-                                            <input type="submit" value="Sign up" class="ec-bgcolor"> </button>
-                                    </ul>
+                                    <div class="form-group">
+                                        <label for="Name">Name</label>
+                                        <input type="text" placeholder="Your Name" id="Name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="Email">Email</label>
+                                        <input type="email" placeholder="Enter email address" id="Email" required>
+                                    </div>
+                                    <button type="submit" class="ec-bgcolor">Sign up</button>
                                 </form>
                             </div>
                         </aside>

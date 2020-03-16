@@ -1,25 +1,28 @@
-(function($) {
-    'use strict';
-
     // Sticky Header Function
     // TODO Write a performant scroll event handler.
     // Use a technique of your choice.
     // Use of jQuery is optional.
     // TIP: Depending on the approach you might consider browser compatibility issues, and present alternatives.
-    jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > 170) {
-            jQuery('body').addClass("ec-sticky");
-        } else {
-            jQuery('body').removeClass("ec-sticky");
+
+    let bodyElement = document.querySelector('body');
+    let Scroll = () => {
+        let pixels_scrolled = window.scrollY;
+        if (pixels_scrolled > 17){
+            bodyElement.classList.add('ec-sticky');
+        }else{
+            bodyElement.classList.remove('ec-sticky');
         }
-    });
+    };
+    bodyElement.onscroll = function(){
+        Scroll();
+    };
 
-    // Click to Top Button
-    jQuery('.backtop-btn').on("click", function() {
-        jQuery('html, body').animate({
-            scrollTop: 0
-        }, 800);
-        return false;
-    });
 
-}(jQuery));
+    let backtop = document.getElementsByClassName('.backtop-btn');
+    const MyBnt = () => {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    };
+    backtop.onclick = function () {
+        MyBnt();
+    };

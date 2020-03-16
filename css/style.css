@@ -4,16 +4,13 @@
 Visit https://fonts.google.com/ select your font, customise your selection, and embed the required fonts */
 @import url(https://fonts.googleapis.com/css?family=Oswald:400&subset=latin);
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,greek);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:600&subset=latin);
 
 /* NOTE: The following 3 tasks refer to the whole css document. */
 /* TODO Group common rules, and properties. */
 /* TODO Make this css file more performant: use Bootstrap's css classes, where appropriate, to replace css rules or rule sets. */
 /* TODO Last thing to do: Remove redundant rule sets, or properties */
 
-* {
-	margin: 0;
-	padding: 0;
-}
 
 body {
 	background-color: #f7f7f7;
@@ -25,8 +22,6 @@ body {
 body h1, body h2, body h3, body h4, body h5, body h6 {
 	color: #333333;
 	font-family: 'Oswald', sans-serif;
-	font-style: normal;
-	font-weight: normal;
 	line-height: 1.5;
 }
 
@@ -42,7 +37,6 @@ p {
 
 a {
 	color: #000000;
-	text-decoration: none;
  }
 
 a:hover, a:focus, a:active {
@@ -50,13 +44,15 @@ a:hover, a:focus, a:active {
 	text-decoration: none;
  }
 
+blockquote, figure, form p, .ec-main-section, .ec-main-wrapper, .ec-watch-section-btn, .ec-navigation > ul > li, .ec-fancy-title, .widget_text_info ul li,#eccomments {
+	position: relative;
+}
+
 blockquote {
 	padding: 0px 0px 0px 30px;
 	margin: 0px 0px 25px 0px;
-	border: none;
 	font-size: 20px;
 	font-weight: 300;
-	position: relative;
 	border-left: 4px double #ddd;
 	border-right: 4px double #ddd;
 	margin-bottom: 30px;
@@ -83,13 +79,13 @@ blockquote:after {
 
 figure {
 	margin-bottom: 6px;
-	position: relative;
  }
 
 /* TODO Add Bootstrap css class to image elements to make the responsive. Not all images need to be responsive by default. */
-img {
-	height: auto;
+.img-responsive {
 	max-width: 100%;
+	height: auto;
+	display: block;
  }
 
 /* Forms */
@@ -107,16 +103,18 @@ select {
  }
 
 /* TODO Bonus: Explain in one sentence why the following rules set is not recommended. */
+
 textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	border: 1px solid #dddddd;
 	box-sizing: border-box;
 	color: #3d3d3d;
-	display: inline-block;
+	display: block;
 	font-size: 12px;
 	font-weight: 400;
 	height: 35px;
+	width: 100%;
 	line-height: 20px;
 	outline: none;
 	padding: 4px 6px;
@@ -125,13 +123,9 @@ textarea, input[type="text"], input[type="password"], input[type="datetime"], in
 
 form p {
 	float: left;
-	position: relative;
 	width: 100%;
  }
 
-.ec-main-section {
-	position: relative;
-}
 .ec-main-content {
 	padding: 50px 0 0 0;
 }
@@ -141,6 +135,14 @@ form p {
 .ec-left-section {
 	float: left;
 }
+
+.ec-featured-star {
+	float: left;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
 .ec-bottom-section, .ec-main-navsection {
 	background-color: #fff;
 }
@@ -153,20 +155,18 @@ form p {
 	z-index: 9999;
 }
 
-.ec-main-wrapper { position: relative; }
-
 /* TopStrip */
 .ec-top-strip,
 .ec-footer-widget {background-color: #1a1a1a;}
 
 .ec-strip-info {
+	list-style: none;
 	float: left;
 	padding-top: 5px;
 	margin-bottom: 0;
 }
 .ec-strip-info li {
 	float: left;
-	list-style: none;
 	color: #fff;
 	font-size: 13px;
 	font-weight: bold;
@@ -189,7 +189,6 @@ form p {
 	font-weight: bold;
 	color: #fff;
 	padding: 11px 20px;
-	position: relative;
 }
 
 /* Header main section */
@@ -208,27 +207,22 @@ form p {
 
 /* Navigation */
 .ec-navigation {
-    background: none;
-    border: none;
     float: left;
-    margin-bottom: 0px;
     text-align: left;
 }
 .ec-navigation > ul > li {
 	float: left;
 	list-style: none;
 	padding: 0px 19px 0px 19px;
-	position: relative;
 }
 /* TODO minimize selector's depth. Add a css class in your markup to target the anchor element. */
-.ec-navigation > ul > li > a {
+.nav-link {
     font-size: 14px;
     color: #343434;
     padding: 35px 0px 37px 0px;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     float: left;
-    position: relative;
 }
 .ec-navigation > ul > li > a:before {
 	content: '';
@@ -287,9 +281,6 @@ form p {
 }
 
 /* FancyTitle */
-.ec-fancy-title {
-	position: relative;
-}
 .ec-fancy-title h1 {
 	font-size: 20px;
 	margin-top: 0;
@@ -332,7 +323,6 @@ form p {
 	margin: 0px;
 }
 .ec-blog-grid > ul > li {
-	float: none;
 	display: inline-block;
 	vertical-align: top;
 	margin-right: -4px;
@@ -354,7 +344,6 @@ form p {
 .ec-grid-time span i { margin-right: 4px; }
 
 /* UserComment */
-#eccomments {position: relative;}
 #eccomments .ec-fancy-title { margin-bottom: 30px; }
 #eccomments, #eccomments h2, .thumblist, #eccomments ul ul.children {
 	float: left;
@@ -366,7 +355,6 @@ form p {
 #eccomments ul li {
 	float: left;
 	list-style: none;
-	position: relative;
 	width: 100%;
  }
 
@@ -381,7 +369,6 @@ form p {
 #eccomments ul li .text {
 	background-color: #fff;
 	padding: 22px 30px 18px 30px;
-	position: relative;
 	box-shadow: 2px 2px 2px 0px #ddd;
 }
 #eccomments ul li .text:before {
@@ -415,7 +402,6 @@ form p {
 #eccomments ul ul.children {
 	margin: 0px 0px 30px 0px;
 	padding: 0px 0px 0px 66px;
-	position: relative;
 }
 
 /* Section Heading */
@@ -463,8 +449,12 @@ form p {
 }
 
 /*  TODO remove the following to rule sets, and add in your markup the bootstrap classes for float left & right */
-.left-section { float: left; }
-.right-section { float: right; }
+.pull-right{
+	float: right !important;
+}
+.pull-left{
+	float: left !important;
+}
 
 /* Services */
 .ec-services {
@@ -574,7 +564,6 @@ form p {
 	float: left;
 	width: 100%;
 	padding: 0px 0px 0px 33px;
-	position: relative;
 	margin-bottom: 2px;
 }
 .widget_text_info ul li i {
