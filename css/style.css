@@ -82,62 +82,17 @@ figure {
  }
 
 /* TODO Add Bootstrap css class to image elements to make the responsive. Not all images need to be responsive by default. */
-.img-responsive {
-	max-width: 100%;
-	height: auto;
-	display: block;
- }
 
 /* Forms */
-select {
-	border: 1px solid #dfdfdf;
-	color: #666666;
-	cursor: pointer;
-	display: inline-block;
-	font-size: 14px;
-	font-weight: 300;
-	height: 40px;
-	padding: 8px 12px;
-	width: 100%;
-	background-color: #f0eef0;
- }
+
 
 /* TODO Bonus: Explain in one sentence why the following rules set is not recommended. */
-
-textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	border: 1px solid #dddddd;
-	box-sizing: border-box;
-	color: #3d3d3d;
-	display: block;
-	font-size: 12px;
-	font-weight: 400;
-	height: 35px;
-	width: 100%;
-	line-height: 20px;
-	outline: none;
-	padding: 4px 6px;
-	vertical-align: middle;
- }
-
-form p {
-	float: left;
-	width: 100%;
- }
 
 .ec-main-content {
 	padding: 50px 0 0 0;
 }
-.ec-right-section {
-	float: right;
-}
-.ec-left-section {
-	float: left;
-}
 
 .ec-featured-star {
-	float: left;
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -161,12 +116,10 @@ form p {
 
 .ec-strip-info {
 	list-style: none;
-	float: left;
 	padding-top: 5px;
 	margin-bottom: 0;
 }
 .ec-strip-info li {
-	float: left;
 	color: #fff;
 	font-size: 13px;
 	font-weight: bold;
@@ -174,17 +127,12 @@ form p {
 	padding: 7px 0px 6px 0px;
 }
 .ec-strip-info li i {
-	float: left;
 	font-size: 16px;
 	margin-right: 8px;
 }
 .ec-strip-info li a { color: #fff; }
 
-.ec-watch-section {
-	float: right;
-}
 .ec-watch-section-btn {
-	float: left;
 	font-size: 13px;
 	font-weight: bold;
 	color: #fff;
@@ -193,25 +141,14 @@ form p {
 
 /* Header main section */
 .ec-logo {
-	float: left;
 	margin: 18px 0;
-}
-
-/* MainNavigation */
-.ec-mainheader {
-	float: left;
-	width: 100%;
-	background-color: #1e1e1e;
-	border-top: 1px solid #262626;
 }
 
 /* Navigation */
 .ec-navigation {
-    float: left;
     text-align: left;
 }
-.ec-navigation > ul > li {
-	float: left;
+.ec-navigation li {
 	list-style: none;
 	padding: 0px 19px 0px 19px;
 }
@@ -222,9 +159,8 @@ form p {
     padding: 35px 0px 37px 0px;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    float: left;
 }
-.ec-navigation > ul > li > a:before {
+.ec-navigation a:before {
 	content: '';
 	position: absolute;
 	left: 0px;
@@ -234,51 +170,12 @@ form p {
 	height: 2px;
 	opacity: 0;
 }
-.ec-navigation > ul > li:hover > a:before,.ec-navigation ul > li.active > a:before {
+.ec-navigation-ul > li:hover > a:before,.ec-navigation-ul > li.active > a:before {
 	opacity: 1;
 	bottom: 50%;
 }
-.ec-navigation > ul > li:first-child > a { padding-left: 0px; }
-.ec-navigation > ul > li:last-child > a { padding-right: 0px; }
-
-/* CartBox */
-.ec-cart-box {
-	position: absolute;
-	right: 0px;
-	top: 100%;
-	background-color: #ffffff;
-	padding: 32px 38px;
-	width: 354px;
-	z-index: 50;
-	margin-top: 8px;
-	margin: 40px 0px 0px 0px;
-	display: none;
-}
-
-/* MainBanner */
-.ec-mainbanner {
-	float: left;
-	width: 100%;
-}
-
-.ec-breadcrumb ul { display: inline-block; }
-.ec-breadcrumb ul li {
-    display: inline-block;
-    color: #ffffff;
-    list-style: none;
-}
-.ec-breadcrumb ul li:before {
-    color: #ededef;
-    content: "\f105";
-    font-family:FontAwesome ;
-    font-size: 12px;
-    padding: 10px;
-}
-.ec-breadcrumb ul li:first-child:before {display: none;}
-.ec-breadcrumb a {
-    color: #adb5db;
-    font-size: 14px;
-}
+.ec-navigation-ul > li:first-child > a { padding-left: 0px; }
+.ec-navigation-ul > li:last-child > a { padding-right: 0px; }
 
 /* FancyTitle */
 .ec-fancy-title h1 {
@@ -299,7 +196,6 @@ form p {
 }
 /* Simple Title */
 .ec-simple-title {
-	float: left;
 	width: 100%;
 	text-align: center;
 	margin-bottom: 35px;
@@ -338,75 +234,15 @@ form p {
 	padding: 10px 19px;
 }
 .ec-grid-time span {
-	float: left;
 	color: #999999;
 }
 .ec-grid-time span i { margin-right: 4px; }
 
 /* UserComment */
-#eccomments .ec-fancy-title { margin-bottom: 30px; }
-#eccomments, #eccomments h2, .thumblist, #eccomments ul ul.children {
-	float: left;
-	width: 100%;
- }
-
-#eccomments ul li .thumblist {padding-bottom: 30px;}
-
-#eccomments ul li {
-	float: left;
-	list-style: none;
-	width: 100%;
- }
-
-#eccomments ul ul {margin: 0px;}
-
-#eccomments ul li figure {
-	border-radius: 100%;
-	width: 48px;
-	float: left;
-}
-#eccomments ul li figure ~ .text {margin: 0px 0px 0px 65px;}
-#eccomments ul li .text {
-	background-color: #fff;
-	padding: 22px 30px 18px 30px;
-	box-shadow: 2px 2px 2px 0px #ddd;
-}
-#eccomments ul li .text:before {
-	content: '';
-	position: absolute;
-	left: -14px;
-	top: 0px;
-	border-top: 14px solid #fff;
-	border-left: 14px solid transparent;
-}
-#eccomments ul li .text a {
-	display: inline-block;
-	margin: 0px 8px 5px 0px;
-	text-transform: capitalize;
-}
-#eccomments ul li .text p { margin-bottom: 3px; }
-#eccomments ul li .text time i { margin-right: 4px; }
-#eccomments ul li .text time {
-	color: #bbbbbb;
-	font-size: 12px;
- }
-
-#eccomments ul li .text a.replay-button,
-#eccomments ul li .text a.comment-button {
-	color: #bbbbbb;
-	font-weight: normal;
-	font-size: 12px;
-}
-#eccomments ul li .text a.replay-button i,
-#eccomments ul li .text a.comment-button i { margin-right: 4px; }
-#eccomments ul ul.children {
-	margin: 0px 0px 30px 0px;
-	padding: 0px 0px 0px 66px;
-}
+.ec-fancy-title { margin-bottom: 30px; }
 
 /* Section Heading */
 .ec-section-heading {
-	float: left;
 	width: 100%;
 	margin: 0px 0px 32px 0px;
 }
@@ -416,12 +252,6 @@ form p {
 }
 
 /* Shop Listing */
-.ec-shop,.ec-shop-list figure,.ec-shop-list figure .ec-shop-thumb,
-.ec-shop-list figure figcaption ul,
-.ec-shop-list .ec-shopinfo {
-	float: left;
-	width: 100%;
-}
 .ec-shop > ul > li { margin-bottom: 30px; }
 .ec-shop ul li {
 	list-style: none;
@@ -449,37 +279,18 @@ form p {
 }
 
 /*  TODO remove the following to rule sets, and add in your markup the bootstrap classes for float left & right */
-.pull-right{
-	float: right !important;
-}
-.pull-left{
-	float: left !important;
-}
-
-/* Services */
-.ec-services {
-	float: left;
-	width: 100%;
-}
-.ec-services > ul > li { margin-bottom: 30px; }
-.ec-services ul li {
-	list-style: none;
-}
 
 /* Default Widget */
 .ec-main-content .widget {
-	float: left;
 	width: 100%;
 	margin-bottom: 30px;
 	background-color: #fff;
 }
 .ec-main-content .widget_categories ul {
-	float: left;
 	padding: 2px 24px 11px;
 	width: 100%;
 }
 .ec-main-content .ec-recentnews_widget > ul {
-	float: left;
 	padding: 14px 20px 0;
 	width: 100%;
 }
@@ -509,14 +320,8 @@ form p {
 	list-style: none;
 	margin-bottom: 22px;
 }
-.ec-recentnews_widget ul li,
-.ec-recentnews_widget ul li figure a,
-.ec-recentnews_widget ul li figure img {
-	float: left;
-	width: 100%;
-}
+
 .ec-recentnews_widget ul li figure {
-	float: left;
 	width: 64px;
 	margin: 0px;
 }
@@ -537,15 +342,12 @@ form p {
 
 /* Categories */
 .widget_categories ul li {
-	float: left;
 	width: 100%;
 	list-style: none;
 	padding: 1px 0px 1px 0px;
 	text-align: right;
 }
-.widget_categories ul li a {
-	float: left;
-}
+
 .widget_categories ul li a::before {
 	content: "\f0da";
 	font-family: FontAwesome;
@@ -556,12 +358,10 @@ form p {
 
 /* Newsletter */
 .widget_text_info ul {
-	float: left;
 	width: 100%;
 	margin-bottom: 30px;
 }
 .widget_text_info ul li {
-	float: left;
 	width: 100%;
 	padding: 0px 0px 0px 33px;
 	margin-bottom: 2px;
@@ -580,15 +380,20 @@ form p {
 	padding: 5px 0px 0px 0px;
 }
 .widget_text_info ul li span {
-	float: left;
 	color: #979797;
 	font-weight: 500;
 }
-.ec-newsletter,.ec-newsletter span,
+
+.ec-shop,.ec-shop-list figure,.ec-shop-list figure .ec-shop-thumb,
+.ec-shop-list figure ul,
+.ec-shop-list .ec-shopinfo,
+.ec-recentnews_widget ul li,
+.ec-recentnews_widget ul li figure a,
+.ec-recentnews_widget ul li figure img,
+.ec-newsletter,
 .ec-newsletter form,
 .ec-newsletter form input[type="text"],
 .ec-newsletter form input[type="submit"] {
-	float: left;
 	width: 100%;
 }
 /* Bottom Section */
@@ -603,7 +408,6 @@ form p {
 	background-color: #333;
 	font-size: 12px;
 	border-radius: 100%;
-	float: right;
 	margin-left: 5px;
 	text-align: center;
 	padding: 4px 0px 0px 1px;

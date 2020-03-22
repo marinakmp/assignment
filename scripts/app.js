@@ -4,25 +4,36 @@
     // Use of jQuery is optional.
     // TIP: Depending on the approach you might consider browser compatibility issues, and present alternatives.
 
-    let bodyElement = document.querySelector('body');
-    let Scroll = () => {
-        let pixels_scrolled = window.scrollY;
-        if (pixels_scrolled > 17){
+    let last_known_scroll_position = 0;
+    let ticking = false;
+    const bodyElement = document.querySelector('body');
+
+    function doSomething(scroll_pos) {
+        if (scroll_pos > 17){
             bodyElement.classList.add('ec-sticky');
+            console.log('hi');
         }else{
             bodyElement.classList.remove('ec-sticky');
         }
-    };
-    bodyElement.onscroll = function(){
-        Scroll();
-    };
+    }
 
+    window.addEventListener('scroll', function(e) {
+        last_known_scroll_position = window.scrollY;
 
-    let backtop = document.getElementsByClassName('.backtop-btn');
-    const MyBnt = () => {
+        if (!ticking) {
+            window.requestAnimationFrame(function() {
+                setTimeout(function () {
+                    doSomething(last_known_scroll_position);
+                    ticking = false;
+                }, 60);
+            });
+
+            ticking = true;
+        }
+    },{capture:true, passive:true});
+
+    const backtop = document.querySelector('.backtop-btn');
+    backtop.addEventListener('click', ()=>{
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
-    };
-    backtop.onclick = function () {
-        MyBnt();
-    };
+    });
