@@ -11,7 +11,6 @@
     function doSomething(scroll_pos) {
         if (scroll_pos > 17){
             bodyElement.classList.add('ec-sticky');
-            console.log('hi');
         }else{
             bodyElement.classList.remove('ec-sticky');
         }
