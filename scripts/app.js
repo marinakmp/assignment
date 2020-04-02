@@ -33,6 +33,5 @@
 
     const backtop = document.querySelector('.backtop-btn');
     backtop.addEventListener('click', ()=>{
-        document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     });

@@ -26,8 +26,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <ul class="ec-strip-info pull-left">
-                                <li class="pull-left"><i class="fa fa-phone pull-left"></i> +00 123 456 789</li>
-                                <li class="pull-left"><i class="fa fa-envelope-o pull-left"></i>
+                                <li class="pull-left"><i class="fa fa-phone"></i> +00 123 456 789</li>
+                                <li class="pull-left"><i class="fa fa-envelope-o"></i>
                                     <!-- TODO Create a hyperlink to the following email address -->
                                     <a href="mailto:info@example.com">info@example.com</a>
                                 </li>
@@ -81,7 +81,7 @@
                 Can you fix it? -->
             <div class="ec-main-section">
                 <div class="container">
-                    <div class="ec-simple-title pull-left">
+                    <div class="ec-simple-title">
                         <h2>Latest news</h2>
                         <p>Bafe Gomis’ header sealed the comeback for Garry Monk’s side, who went on to complete the double over Arsenal later</p>
                     </div>
@@ -91,7 +91,7 @@
                                         <!-- TODO Using CSS position the star icon at the top left of the news car -->
                                 <div class="ec-blog-wrap">
                                     <figure>
-                                        <a href="#"><img src="img/blog-grid-1.jpg" alt="" class="img-responsive"></a><span class="ec-featured-star ec-bgcolor pull-left"><i class="fa fa-star"></i></span>
+                                        <a href="#"><img src="img/blog-grid-1.jpg" alt="" class="img-responsive"></a><span class="ec-featured-star ec-bgcolor"><i class="fa fa-star"></i></span>
                                     </figure>
                                     <div class="ec-blog-text">
                                         <h2><a href="#">United, Palace Aim To Rebound From Setbacks</a></h2>
@@ -139,16 +139,11 @@
                             <p>Aldous Huxley, New York Times</p>
                         </blockquote>
                     </div>
-                </div>
-            </div>
-
-            <div class="ec-main-section">
-                <div class="container">
                     <div class="row">
                         <div class="ec-section-heading pull-left"><h2>Our Favourite Shop</h2></div>
                         </div>
-                        <div class="ec-shop ec-shop-list pull-left">
-                            <ul class="row pull-left">
+                        <div class="ec-shop ec-shop-list">
+                            <ul class="row">
                                     <!-- TODO Use the correct Bootstrap css classes to make the following list item element span in...
                                      a) 2 columns in view port width 768 and up
                                      b) 4 columns in view port width 992 and up -->
@@ -205,33 +200,39 @@
             <div class="ec-footer-widget">
                 <div class="container">
                     <div class="row">
-                        <div class="widget col-md-4 ec-recentnews_widget pull-left">
-                            <div class="ec-section-heading pull-left"><h2>Recently News</h2></div>
-                            <ul class="pull-left">
-                                <li class="pull-left">
-                                    <figure class="pull-left">
-                                        <a href="#" class="pull-left"><img src="img/recent-widget-1.jpg" alt="" class="img-responsive pull-left"></a>
+                        <div class="widget col-md-4">
+                            <div class="ec-section-heading"><h2>Recently News</h2></div>
+                            <ul>
+                                <li class="media">
+                                    <figure class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="img/recent-widget-1.jpg" alt="...">
+                                        </a>
                                     </figure>
-                                    <section>
-                                        <h6><a href="#">United, Palace Aim To Rebound From Setbacks</a></h6>
+                                    <section class="media-body">
+                                        <h6 class="media-heading"><a href="#">United, Palace Aim To Rebound From Setbacks</a></h6>
                                         <span><i class="fa fa-clock-o"></i> 2 days ago</span>
                                     </section>
                                 </li>
-                                <li class="pull-left">
-                                    <figure class="pull-left">
-                                        <a href="#" class="pull-left"><img src="img/recent-widget-1.jpg" alt="" class="img-responsive pull-left"></a>
+                                <li class="media">
+                                    <figure class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="img/recent-widget-1.jpg" alt="...">
+                                        </a>
                                     </figure>
-                                    <section>
-                                        <h6><a href="#">The summer of 2014 all about.</a></h6>
+                                    <section class="media-body">
+                                        <h6 class="media-heading"><a href="#">The summer of 2014 all about.</a></h6>
                                         <span><i class="fa fa-clock-o"></i> 2 days ago</span>
                                     </section>
                                 </li>
-                                <li class="pull-left">
-                                    <figure class="pull-left">
-                                        <a href="#" class="pull-left"><img src="img/recent-widget-1.jpg" alt="" class="img-responsive pull-left"></a>
+                                <li class="media">
+                                    <figure class="media-left">
+                                        <a href="#">
+                                            <img class="media-object" src="img/recent-widget-1.jpg" alt="...">
+                                        </a>
                                     </figure>
-                                    <section>
-                                        <h6><a href="#">Sevilla finished fifth and just out of the.</a></h6>
+                                    <section class="media-body">
+                                        <h6 class="media-heading"><a href="#">Sevilla finished fifth and just out of the.</a></h6>
                                         <span><i class="fa fa-clock-o"></i> 2 days ago</span>
                                     </section>
                                 </li>
@@ -252,8 +253,8 @@
                                 </ul>
                             </nav>
                         </div>
-                        <div class="widget col-md-4 widget_text_info pull-left">
-                            <div class="ec-section-heading pull-left"><h2>Contact</h2></div>
+                        <div class="widget col-md-4 widget_text_info">
+                            <div class="ec-section-heading"><h2>Contact</h2></div>
                             <ul class="list-unstyled pull-left">
                                 <li class="pull-left">
                                     <i class="fa fa-map-marker"></i>
@@ -296,7 +297,7 @@
                 <div class="container">
                     <div class="clearfix">
                         <img src="img/logo.jpg" alt="" width="100" class="img-responsives"> © copyright 2019 all rights reserved
-                        <a href="index.html" class="pull-right backtop-btn">Back to top <i class="fa fa-caret-up pull-right"></i></a>
+                        <a href="index.html" class="pull-right backtop-btn">Back to top <i class="fa fa-caret-up"></i></a>
                     </div>
                 </div>
             </div>
@@ -304,8 +305,8 @@
     </div>
 
     <!-- TODO Load framework scripts from a CDN provider. Think about performance. -->
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.0/js/bootstrap.min.js"></script>
 
     <script src="scripts/app.js"></script>
 </body>

@@ -290,10 +290,6 @@ figure {
 	padding: 2px 24px 11px;
 	width: 100%;
 }
-.ec-main-content .ec-recentnews_widget > ul {
-	padding: 14px 20px 0;
-	width: 100%;
-}
 
 /* Footer */
 .ec-footer-widget {
@@ -316,27 +312,25 @@ figure {
 }
 
 /* Recent News */
-.ec-recentnews_widget ul li {
+.media {
 	list-style: none;
 	margin-bottom: 22px;
 }
 
-.ec-recentnews_widget ul li figure {
+.media figure {
 	width: 64px;
 	margin: 0px;
 }
-.ec-recentnews_widget ul li figure ~ section {
-	padding-left: 79px;
-}
-.ec-recentnews_widget ul li section h6 {
+
+.media-heading{
 	margin-bottom: 0px;
 }
-.ec-recentnews_widget ul li section span {
+.media-body span {
 	color: #979797;
 	font-size: 12px;
 	font-weight: 600;
 }
-.ec-recentnews_widget ul li section span i {
+.media-body span i {
 	margin-right: 4px;
 }
 
